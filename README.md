@@ -1,5 +1,9 @@
-# dotfiles
+dotfiles
+========
 Linux customizations; lots of stuff stolen from /r/unixporn. Pacakages with links are to the git repositories or AUR packages.
+
+The Goods
+---------
 
 WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-git.git)
 
@@ -13,7 +17,8 @@ System Font: Open Sans
 
 Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 
-Packages to be installed -
+Packages to Install
+-------------------
 
 * conky
 
