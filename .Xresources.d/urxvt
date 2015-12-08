@@ -1,0 +1,10 @@
+! urxvt config
+
+!urxvt*foreground: white
+urxvt*background: #343434
+urxvt*transparent: true
+urxvt*shading: 14
+urxvt*scrollstyle: plain
+urxvt*scrollColor: #4d5265
+urxvt*cursorBlink: 1
+urxvt*font: xft:Hack:style=Regular:size=8

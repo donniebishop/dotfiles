@@ -1,0 +1,14 @@
+! Commented lines start with '!'
+
+! Included config files
+#include ".Xresources.d/urxvt"
+!#include ".Xresources.d/rofi"
+
+! Choose a theme!
+!#include ".Xresources.d/themes/"
+
+#include ".Xresources.d/themes/arc"
+!#include ".Xresources.d/themes/mememe"
+!#include ".Xresources.d/themes/b16-sulphurpool"
+!#include ".Xresources.d/themes/b16-plateau"
+!#include ".Xresources.d/themes/ghoul"

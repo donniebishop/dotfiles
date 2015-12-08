@@ -1,0 +1,32 @@
+! Arc Colors (pastebin.com/FZaMqNCx)
+! with a few changes by dbishop
+
+*.cursorColor:  #ffffff
+*.background: #404552
+*.foreground: #b3bdcb
+
+! Black + DarkGrey
+*.color0:  #414141
+*.color8:  #343434
+! DarkRed + Red
+*.color1:  #e93a44
+*.color9:  #a3464a
+! DarkGreen + Green
+*.color2:  #2679db
+*.color10: #75a9e8
+! DarkYellow + Yellow
+*.color3:  #b3bdcb
+*.color11: #CAD1DB
+! DarkBlue + Blue
+*.color4:  #5294e2
+*.color12: #97bfee
+! DarkMagenta + Magenta
+*.color5:  #00cc66
+*.color13: #339966
+! DarkCyan + Cyan
+*.color6:  #b3bdcb
+*.color14: #4d5265
+! LightGrey + White
+*.color7:  #E1E5EA
+*.color15: #ffffff
+
