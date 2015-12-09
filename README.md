@@ -7,7 +7,9 @@ The Goods
 
 WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-git.git)
 
-GTK Theme: [Arc](https://github.com/horst3180/Arc-theme.git)
+GTK Theme: [Arc](https://github.com/horst39180/Arc-theme.git)
+
+GTK Icon Theme: [ultra-flat-icons](https://aur.archlinux.org/ultra-flat-icons.git)
 
 Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-darker-theme/)
 
@@ -20,12 +22,16 @@ Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 Packages to Install
 -------------------
 
-* conky
+* lxappearance (GTK config manager)
 
-* [compton](https://aur.archlinux.org/compton.git)
+* [compton](https://aur.archlinux.org/compton.git) (screen compositor)
 
-* rofi
+* rofi (application starter)
 
-* urxvt
+* urxvt (terminal)
 
-* atom
+* [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
+
+* thunar (file manager)
+
+* cronie (cron daemon)

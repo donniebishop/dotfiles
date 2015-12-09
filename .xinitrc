@@ -42,8 +42,9 @@ fi
 # xterm -geometry 80x20+494-0 &
 # exec xterm -geometry 80x66+0+0 -name login
 
-
+# After VBox kernel modules loaded by vboxservice.service, load Guest Services:
 /usr/bin/VBoxClient-all
+
 [[ -f ~/.Xresources ]] && xrdb -merge -I/home/dbishop ~/.Xresources
 
 # compton for shadows and stuff
