@@ -2,7 +2,7 @@
 
 ! Included config files
 #include ".Xresources.d/urxvt"
-!#include ".Xresources.d/rofi"
+#include ".Xresources.d/rofi"
 
 ! Choose a theme!
 !#include ".Xresources.d/themes/"

@@ -1,0 +1,11 @@
+#/bin/bash
+
+echo ''
+
+for process in "$@"
+do
+    systemctl status "$process"
+    echo ''
+    echo '------------------------------'
+    echo ''
+done
