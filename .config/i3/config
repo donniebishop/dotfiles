@@ -166,6 +166,7 @@ client.urgent               #900000     #900000     #ffffff
 # finds out, if available)
 bar {
         #status_command i3status
+        status_command i3blocks
         tray_output primary
         position top
         font pango:Open Sans, Icons 8
@@ -181,7 +182,10 @@ bar {
         }
 }
 
+##############################
+
 # i3-gaps config
+
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
 
@@ -247,10 +251,32 @@ mode "$mode_gaps_outer" {
     bindsym Escape mode "default"
 }
 
+##############################
+
+# power options
+
+set $Locker i3lock-wrapper && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Escape mode "$mode_system"
 
 ##############################
 
 # myconf
+exec_always --no-startup-id /usr/bin/compton -bc -o 0.5 --config /home/dbishop/.config/compton.conf
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 #exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/irl/*
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/dbishop/.config/i3/ws_1.json'"

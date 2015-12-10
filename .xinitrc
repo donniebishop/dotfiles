@@ -42,15 +42,11 @@ fi
 # xterm -geometry 80x20+494-0 &
 # exec xterm -geometry 80x66+0+0 -name login
 
-# After VBox kernel modules loaded by vboxservice.service, load Guest Services:
+# after loading vbox kernel mods, load Guest Additions
 /usr/bin/VBoxClient-all
 
-[[ -f ~/.Xresources ]] && xrdb -merge -I/home/dbishop ~/.Xresources
-
-# compton for shadows and stuff
-/usr/bin/compton -bc -o.4 --config /home/dbishop/.config/compton.conf
+exec i3
 
 # start Thunar as daemon for quickloading
-#thunar --daemon
+thunar --daemon
 
-exec i3
