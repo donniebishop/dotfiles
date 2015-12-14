@@ -1,6 +1,7 @@
 dotfiles
 ========
-Linux customizations; lots of stuff stolen from /r/unixporn. Pacakages with links are to the git repositories or AUR packages.
+Linux customizations; lots of stuff stolen from /r/unixporn. Packages with links are to the git repositories or AUR links.
+It's safe to assume that if it's not linked, it can be installed directly via pacman :)
 
 The Goods
 ---------
@@ -28,13 +29,7 @@ Packages to Install
 
 * alsa-utils (ALSA Mixer and sound utilities)
 
-* [compton](https://aur.archlinux.org/compton.git) (screen compositor)
-
-* [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
-
-* urxvt (terminal)
-
-* [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
+* rxvt-unicode (terminal)
 
 * thunar (file manager)
 
@@ -43,3 +38,11 @@ Packages to Install
 * w3m (for image preview in ranger)
 
 * cronie (cron daemon)
+
+* [compton](https://aur.archlinux.org/compton.git) (screen compositor)
+
+* [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
+
+* [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
+
+* [i3lock-wrapper](https://aur.archlinux.org/i3lock-wrapper.git) (pretty/blurry i3lock)
