@@ -15,7 +15,7 @@ Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-d
 
 Terminal Font: [Hack](https://aur.archlinux.org/otf-hack.git)
 
-System Font: Open Sans
+System Font: [Open Sans](https://aur.archlinux.org/ttf-opensans.git)
 
 Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 
@@ -24,14 +24,22 @@ Packages to Install
 
 * lxappearance (GTK config manager)
 
+* xorg-server, xrdb (X11 Server and X Resources Database)
+
+* alsa-utils (ALSA Mixer and sound utilities)
+
 * [compton](https://aur.archlinux.org/compton.git) (screen compositor)
 
-* rofi (application starter)
+* [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
 * urxvt (terminal)
 
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
 
 * thunar (file manager)
+
+* ranger (command line file manager)
+
+* w3m (for image preview in ranger)
 
 * cronie (cron daemon)
