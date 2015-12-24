@@ -21,8 +21,8 @@
 *.color4:  #5294e2
 *.color12: #97bfee
 ! DarkMagenta + Magenta
-*.color5:  #00cc66
-*.color13: #339966
+*.color5:  #42d7b9
+*.color13: #27c6a6
 ! DarkCyan + Cyan
 *.color6:  #b3bdcb
 *.color14: #4d5265
