@@ -23,9 +23,9 @@ Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 Packages to Install
 -------------------
 
-* lxappearance (GTK config manager)
-
 * xorg-server, xrdb (X11 Server and X Resources Database)
+
+* lxappearance (GTK config manager)
 
 * alsa-utils (ALSA Mixer and sound utilities)
 
@@ -35,9 +35,11 @@ Packages to Install
 
 * ranger (command line file manager)
 
-* w3m (for image preview in ranger)
+* w3m (for image previews)
 
 * cronie (cron daemon)
+
+* [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)
 
 * [compton](https://aur.archlinux.org/compton.git) (screen compositor)
 
