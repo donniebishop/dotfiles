@@ -60,7 +60,7 @@ set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
 "set textwidth=79    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
  
-set formatoptions=c,q,r,t " This is a sequence of letters which describes how
+set formatoptions=c,q,t " This is a sequence of letters which describes how
                     " automatic formatting is to be done.
                     "
                     " letter    meaning when present in 'formatoptions'
