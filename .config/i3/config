@@ -124,7 +124,7 @@ bindsym $mod+r mode "resize"
 set $white      #ffffff
 set $alive      #aaaaaa
 set $sixes      #666666
-set $dead       #555555
+set $fives      #555555
 set $fours      #444444
 set $threes     #333333
 set $twos       #222222
@@ -141,11 +141,13 @@ set $ws3 3 
 set $ws9 9  
 set $ws0 10 
 
-# window assignments/configs
+# window assignments
 assign [class="Firefox"] $ws2
 assign [class="Atom"] $ws3
 assign [class="Thunar"] $ws9
 assign [class="Spotify"] $ws0
+
+# floating windows
 for_window [class="feh"] floating enable
 for_window [class="Lxappearance"] floating enable
 
@@ -175,8 +177,8 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 # borders
 client.focused              $alive  $alive  $white
-client.unfocused            $dead   $dead   $alive
-client.focused_inactive     $dead   $dead   $alive
+client.unfocused            $twos   $twos   $alive
+client.focused_inactive     $twos   $twos   $alive
 client.urgent               $red    $red    $white
 
 ###########
@@ -195,7 +197,7 @@ bar {
 
                 focused_workspace   $sixes  $fours   $white
                 active_workspace    $threes $twos    $alive
-                inactive_workspace  $threes $twos    $dead
+                inactive_workspace  $threes $twos    $fives
                 urgent_workspace    $sixes  $arcblue $white
                 binding_mode        $sixes  $arcblue $white
         }
@@ -206,7 +208,7 @@ bar {
 ####################
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 3
 
 # # Set inner/outer gaps
 gaps inner 15
@@ -306,7 +308,7 @@ exec --no-startup-id "i3-msg exec urxvt\; exec urxvt\; exec urxvt"
 exec --no-startup-id firefox
 
 # custom key assignments
-#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+m exec --no-startup-id rofi -show run
 
