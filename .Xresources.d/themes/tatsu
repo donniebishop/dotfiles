@@ -1,0 +1,36 @@
+! Tatsumaki
+*.foreground:   #d6e1e1
+*.background:   #000000
+*.cursorColor:  #d6e1e1
+
+! black
+*.color0:       #0d0e0f
+*.color8:       #dc8fcf
+
+! red
+*.color1:       #171919
+*.color9:       #0fe9a2
+
+! green
+*.color2:       #282b2b
+*.color10:      #bcaf63
+
+! yellow
+*.color3:       #3f4343
+*.color11:      #85cdd0
+
+! blue
+*.color4:       #5c6262
+*.color12:      #89a2e4
+
+! magenta
+*.color5:       #808888
+*.color13:      #aa9f61
+
+! cyan
+*.color6:       #a9b3b4
+*.color14:      #e29893
+
+! white
+*.color7:       #d9e5e5
+*.color15:      #50cace
