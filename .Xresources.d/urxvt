@@ -9,3 +9,4 @@ urxvt*scrollBar: false
 !urxvt*scrollColor: #4d5265
 urxvt*cursorBlink: 1
 urxvt*font: xft:Hack:style=Regular:size=8
+urxvt*internalBorder: 15
