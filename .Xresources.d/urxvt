@@ -1,12 +1,29 @@
 ! urxvt config
 
-urxvt*foreground: white
-urxvt*background: black 
-!urxvt*transparent: false
-!urxvt*shading: 14
-urxvt*scrollBar: false
-!urxvt*scrollstyle: plain
-!urxvt*scrollColor: #4d5265
-urxvt*cursorBlink: 1
+! Default term options
+!
+!urxvt*foreground: white
+!urxvt*background: black 
 urxvt*font: xft:Hack:style=Regular:size=8
 urxvt*internalBorder: 13
+urxvt*cursorBlink: 1
+
+! Sky theme colors
+! 
+urxvt*foreground: #e0cac7
+urxvt*background: #070a20 
+
+! Sunsetcity colors
+! 
+!urxvt*foreground: #e04c43
+!urxvt*background: #202020
+
+! Transparency
+!
+!urxvt*transparent: false
+!urxvt*shading: 14
+
+! Scrollbar
+!
+urxvt*scrollBar: false
+!urxvt*scrollColor: #4d5265
