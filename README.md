@@ -48,3 +48,5 @@ Packages to Install
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
 
 * [i3lock-wrapper](https://aur.archlinux.org/i3lock-wrapper.git) (pretty/blurry i3lock)
+
+* [playerctl](https://aur.archlinux.org/playerctl.git) (music player controller)

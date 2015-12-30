@@ -131,8 +131,9 @@ set $twos       #222222
 set $ones       #111111
 set $black      #000000
 
+
+# custom colors
 set $red        #900000
-set $arcblue    #2679db
 
 # set ws names
 set $ws1 1 
@@ -311,4 +312,9 @@ exec --no-startup-id firefox
 bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec --no-startup-id rofi -show run
 bindsym $mod+m exec --no-startup-id rofi -show run
+
+# playerctl keybindings
+bindsym $wmod+Right exec --no-startup-id playerctl next
+bindsym $wmod+Left exec --no-startup-id playerctl previous
+bindsym $wmod+space exec --no-startup-id playerctl play-pause
 
