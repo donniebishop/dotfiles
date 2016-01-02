@@ -27,17 +27,17 @@ Packages to Install
 
 * lxappearance (GTK config manager)
 
-* alsa-utils (ALSA Mixer and sound utilities)
-
 * rxvt-unicode (terminal)
 
 * thunar (file manager)
 
 * ranger (command line file manager)
+  * w3m (for image previews)
 
-* w3m (for image previews)
+* alsa-utils (ALSA Mixer and sound utilities)
 
-* cronie (cron daemon)
+* mopidy (MPD replacement)
+  * ncmpcpp (MPD client and music player)
 
 * [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)
 
@@ -46,7 +46,5 @@ Packages to Install
 * [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
-
-* [i3lock-wrapper](https://aur.archlinux.org/i3lock-wrapper.git) (pretty/blurry i3lock)
 
 * [playerctl](https://aur.archlinux.org/playerctl.git) (music player controller)
