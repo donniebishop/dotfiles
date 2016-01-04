@@ -152,6 +152,21 @@ def_key "space"
 def_key "backspace"
   delete_playlist_items
 
+# Left and right skip/rewind 
+def_key "left"
+  previous
+
+def_key "right"
+  next
+
+# disable update database on "u"
+def_key "u"
+  dummy
+
+# Escape clears playlist and quits
+def_key "escape"
+  stop
+  quit
 
 ##### List of unbound actions #####
 ##
