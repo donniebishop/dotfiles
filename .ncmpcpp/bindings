@@ -163,6 +163,14 @@ def_key "right"
 def_key "u"
   dummy
 
+# remap s to single mode
+def_key "s"
+  toggle_single
+
+# Shift-S to stop playback
+def_key "S"
+  stop
+
 # Escape clears playlist and quits
 def_key "escape"
   stop
