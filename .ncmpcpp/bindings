@@ -171,10 +171,37 @@ def_key "s"
 def_key "S"
   stop
 
+# Make Shift-L lyrics
+def_key "L"
+  show_lyrics
+
+# Some vim keybindings
+def_key "j"
+  scroll_down
+
+def_key "k"
+  scroll_up
+
+def_key "l"
+  next
+def_key "l"
+  next_column
+
+def_key "h"
+  previous
+def_key "h"
+  previous_column
+
+def_key "g"
+  move_home
+
+def_key "G"
+  move_end
+
 # Escape clears playlist and quits
-def_key "escape"
-  stop
-  quit
+#def_key "escape"
+#  stop
+#  quit
 
 ##### List of unbound actions #####
 ##
