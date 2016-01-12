@@ -6,14 +6,15 @@
 [[ $- != *i* ]] && return
 
 # default bash PS1
-PS1='\u@\h \W \$ '
+#PS1='\u@\h \W \$ '
 
-# my PS1
-# PS1='\[\e[4;36m\]\u\[\e[m\]\[\e[4;36m\]@\h\[\e[m\] \[\e[0;37m\]\W\[\e[m\] \[\e[1;35m\]\$\[\e[m\] \[\e[0;37m\]'
+# custom PS1
+#PS1='\[\e[4;36m\]\u\[\e[m\]\[\e[4;36m\]@\h\[\e[m\] \[\e[0;37m\]\W\[\e[m\] \[\e[1;35m\]\$\[\e[m\] ' 
+PS1='\u@\h \W \[\e[1;35m\]\$\[\e[m\] '
 
 # use vim as editor
 export VISUAL="vim"
-export EDITOR="$VISUAL"
+export EDITOR=$VISUAL
 
 # python virtualenvwrapper
 export WORKON_HOME="~/.venvs"
@@ -25,6 +26,8 @@ alias lsa='ls -A --color=auto'
 alias lsl='ls -lh --color=auto'
 alias lsla='ls -Alh --color=auto'
 alias lso='ls -A | grep --color=auto'
+alias lsr='ls -R'
+alias lslr='ls -lR'
 alias lsd='ls -d */'
 alias lsld='ls -dl */'
 alias lslo='ls -Alh | grep --color=auto'
@@ -42,8 +45,10 @@ fi
 if [[ -x /usr/bin/pacman ]]
 then
     alias supacins='sudo pacman -S '
+    alias supacrem='sudo pacman -R '
     alias supacupd='sudo pacman -Syyu'
     alias pacsearch='pacman -Ss '
+    alias pacinfo='pacman -Si '
 
     # Yaourt aliases, if installed
     if [[ -x /usr/bin/yaourt ]]
