@@ -8,10 +8,9 @@
 !#include ".Xresources.d/themes/"
 
 !#include ".Xresources.d/themes/arc"
-#include ".Xresources.d/themes/sky"
+#include ".Xresources.d/themes/cmyk"
+!#include ".Xresources.d/themes/sky"
+!#include ".Xresources.d/themes/sunsetcity"
 !#include ".Xresources.d/themes/5cm"
 !#include ".Xresources.d/themes/tatsu"
-!#include ".Xresources.d/themes/mememe"
-!#include ".Xresources.d/themes/b16-sulphurpool"
-!#include ".Xresources.d/themes/b16-plateau"
 !#include ".Xresources.d/themes/ghoul"

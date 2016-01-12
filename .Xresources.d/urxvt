@@ -5,18 +5,23 @@
 !urxvt*foreground: white
 !urxvt*background: black 
 urxvt*font: xft:Hack:style=Regular:size=8
-urxvt*internalBorder: 13
+urxvt*internalBorder: 15
 urxvt*cursorBlink: 1
 
 ! Sky theme colors
 ! 
-urxvt*foreground: #e0cac7
-urxvt*background: #070a20 
+!urxvt*foreground: #e0cac7
+!urxvt*background: #070a20 
 
 ! Sunsetcity colors
 ! 
 !urxvt*foreground: #e04c43
 !urxvt*background: #202020
+
+! CMYK colors
+! 
+urxvt*foreground: #e0e0de
+urxvt*background: #090a20
 
 ! Transparency
 !

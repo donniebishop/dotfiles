@@ -7,10 +7,10 @@
 
 # default bash PS1
 #PS1='\u@\h \W \$ '
-
 # custom PS1
-#PS1='\[\e[4;36m\]\u\[\e[m\]\[\e[4;36m\]@\h\[\e[m\] \[\e[0;37m\]\W\[\e[m\] \[\e[1;35m\]\$\[\e[m\] ' 
 PS1='\u@\h \W \[\e[1;35m\]\$\[\e[m\] '
+# minimal PS1
+#PS1='\w \[\e[1;35m\]\$\[\e[m\] '
 
 # use vim as editor
 export VISUAL="vim"
@@ -85,4 +85,5 @@ alias symlink='sudo ln -s'
 alias i3config='vim ~/.config/i3/config'
 alias xrdbreload='xrdb ~/.Xresources'
 alias vixres='vim ~/.Xresources'
+alias wtfis='whatis '
 
