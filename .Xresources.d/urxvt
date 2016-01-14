@@ -7,6 +7,7 @@
 urxvt*font: xft:Hack:style=Regular:size=8
 urxvt*internalBorder: 15
 urxvt*cursorBlink: 1
+URxvt.letterSpace: -1
 
 ! Sky theme colors
 ! 
