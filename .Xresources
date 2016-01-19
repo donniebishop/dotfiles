@@ -16,10 +16,8 @@
 !#include ".Xresources.d/themes/ghoul"
 
 !Some font rendering fixings
-Xft.lcdfilter: lcddefault
-Xft.antialias: true
-Xft.autohint: 0
-Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.rgba: rgb
-Xft.dpi: 96
+Xft.dpi:        96
+Xft.rgba:       rgb
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.hintstyle:  hintslight

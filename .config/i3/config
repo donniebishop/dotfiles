@@ -9,14 +9,12 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $red        #900000
-set $skyblue    #3055bc
-set $termbg     #070a20
-set $termfg     #e0cac7
+set $termbg     #090a20
+set $termfg     #e0e0de
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
-exec_always --no-startup-id /usr/bin/compton -bc -o 0.5 --config /home/dbishop/.config/compton.conf
+exec_always --no-startup-id /usr/bin/compton -bC -o 0.5 --config /home/dbishop/.config/compton.conf
 
 # load up default terminal config for ws1, and then fire off some default progs
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/dbishop/.config/i3/ws1.json'"
@@ -31,6 +29,8 @@ bindsym $mod+m exec --no-startup-id rofi -show run
 # mpc bindings (ncmpcpp control
 bindsym $wmod+Right exec --no-startup-id mpc next
 bindsym $wmod+Left exec --no-startup-id mpc prev
+#bindsym $wmod+Shift+Right exec --no-startup-id mpc seek +0:0:7
+#bindsym $wmod+Shift+Left exec --no-startup-id mpc seek -0:0:7
 bindsym $wmod+space exec --no-startup-id mpc toggle
 
 # playerctl keybindings
@@ -56,7 +56,7 @@ set $black      #000000
 
 # ws names
 set $ws1 1 
-set $ws2 2 
+set $ws2 2 
 set $ws3 3 
 set $ws9 9  
 set $ws0 10 
@@ -117,7 +117,7 @@ bar {
         status_command i3blocks
         tray_output primary
         position top
-        font pango:Hack 10, Awesome 8
+        font pango: Awesome 8
         colors {
                 background  $termbg
                 statusline  $termfg
@@ -176,12 +176,12 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
+        bindsym Escape mode "default"
         bindsym Return mode "default"
         bindsym o      mode "$mode_gaps_outer"
-        bindsym O      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
-        bindsym I      mode "$mode_gaps_inner"
-        bindsym Escape mode "default"
+        bindsym Shift+o      mode "$mode_gaps_outer"
+        bindsym Shift+I      mode "$mode_gaps_inner"
 }
 
 mode "$mode_gaps_inner" {
@@ -222,7 +222,7 @@ mode "$mode_system" {
     #bindsym l exec --no-startup-id $Locker, mode "default"
     #bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
     #bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-    bindsym Shift+L exec --no-startup-id i3-msg exit, mode "default"
+    bindsym Shift+l exec --no-startup-id i3-msg exit, mode "default"
     bindsym Shift+r exec --no-startup-id systemctl reboot, mode "default"
     bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
@@ -238,7 +238,10 @@ bindsym $mod+Escape mode "$mode_system"
 #  resize mode  #
 #################
 
-mode "resize" {
+set $resize Resize
+bindsym $mod+r mode "resize"
+
+mode "$resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -260,8 +263,6 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-bindsym $mod+r mode "resize"
 
 
 ############
@@ -286,10 +287,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+semicolon focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left

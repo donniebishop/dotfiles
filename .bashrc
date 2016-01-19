@@ -14,8 +14,11 @@
 PS1='\w \[\e[1;35m\]\$\[\e[m\] '
 
 # use vim as editor
-export VISUAL="vim"
-export EDITOR=$VISUAL
+if [[ -x /usr/bin/vim ]]
+then
+    export VISUAL="vim"
+    export EDITOR=$VISUAL
+fi
 
 # python virtualenvwrapper
 export WORKON_HOME="~/.venvs"
@@ -93,6 +96,5 @@ alias xrdbreload='xrdb ~/.Xresources'
 # random things
 alias sudo='sudo '
 alias symlink='sudo ln -s'
-
 alias wtfis='whatis '
 
