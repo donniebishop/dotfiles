@@ -21,19 +21,19 @@ then
 fi
 
 # python virtualenvwrapper
-export WORKON_HOME="~/.venvs"
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME="~/.venvs"
+#source /usr/bin/virtualenvwrapper.sh
 
 # ls aliases
 alias ls='ls --color=auto'
 alias lsa='ls -A --color=auto'
 alias lsl='ls -lh --color=auto'
 alias lsla='ls -Alh --color=auto'
-alias lso='ls -A | grep --color=auto'
 alias lsr='ls -R'
 alias lslr='ls -lR'
 alias lsd='ls -d */'
 alias lsld='ls -dl */'
+alias lso='ls -A | grep --color=auto'
 alias lslo='ls -Alh | grep --color=auto'
 alias lsonly='ls -A | grep --color=auto'
 alias lslonly='ls -Alh | grep --color=auto'
@@ -44,13 +44,14 @@ then
     alias searchlogs='journalctl -b --no-pager | grep'
 fi
 
-# package manager helpers
+### package manager helpers
 # ARCH - Pacman
 if [[ -x /usr/bin/pacman ]]
 then
     alias supacins='sudo pacman -S '
     alias supacrem='sudo pacman -R '
     alias supacupd='sudo pacman -Syyu'
+    alias supacclean='sudo pacman -Sc'
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si '
 
@@ -58,8 +59,10 @@ then
     if [[ -x /usr/bin/yaourt ]]
     then
         alias yaouins='yaourt -S '
+        alias yaourem='yaourt -R '
         alias yaoupdate='yaourt -Syu --aur'
         alias aursearch='yaourt -Ss '
+        alias aurinfo='yaourt -Si '
     fi
 
     # makepkg alias, for better everything
