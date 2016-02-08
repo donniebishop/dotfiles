@@ -1,0 +1,19 @@
+*color0: #202020
+*color1: #99a08d
+*color2: #9ca094
+*color3: #a09d94
+*color4: #a08d82
+*color5: #a06c60
+*color6: #95a093
+*color7: #a0a093
+*color8: #807367
+*color9: #c8a691
+*color10: #c89a82
+*color11: #c88b74
+*color12: #c87560
+*color13: #c86551
+*color14: #d95a4c
+*color15: #e04c43
+
+#define termbg #202020
+#define termfg #e04c43

@@ -2,18 +2,18 @@
 
 ! background color and opacity
 rofi.background: #a00a38
-rofi.opacity: 97
+rofi.opacity: 93
 rofi.terminal: urxvt
 
 ! text color
-rofi.foreground: #ffffff
+rofi.foreground: termfg
 
 ! selection bar color
 rofi.hlbg: #cb4266
 rofi.bc: #cb4266
 
 ! selection text color
-rofi.hlfg: #ffffff
+rofi.hlfg: termfg
 
 rofi.eh: 3
 rofi.width: 100

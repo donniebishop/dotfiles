@@ -14,3 +14,6 @@
 *color13: #d99db1
 *color14: #d9becb
 *color15: #e0cac7
+
+#define termbg #070a20
+#define termfg #e0cac7

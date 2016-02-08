@@ -1,28 +1,16 @@
 ! urxvt config
 
 ! Default term options
-!
-!urxvt*foreground: white
-!urxvt*background: black 
+
+! termbg and termfg defined in each theme
+urxvt*background: termbg
+urxvt*foreground: termfg
+
 urxvt*font: xft:Hack:style=Regular:size=8
-urxvt*internalBorder: 15
+urxvt*url-launcher: firefox
+urxvt*internalBorder: 20
 urxvt*cursorBlink: 1
 URxvt.letterSpace: -1
-
-! Sky theme colors
-! 
-!urxvt*foreground: #e0cac7
-!urxvt*background: #070a20 
-
-! Sunsetcity colors
-! 
-!urxvt*foreground: #e04c43
-!urxvt*background: #202020
-
-! CMYK colors
-! 
-urxvt*foreground: #e0e0de
-urxvt*background: #090a20
 
 ! Transparency
 !
