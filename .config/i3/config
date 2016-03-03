@@ -9,8 +9,8 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $termbg     #090a20
-set $termfg     #e0e0de
+set $termbg     #1e1e20
+set $termfg     #e0d8d1
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
@@ -95,7 +95,7 @@ set $ws0 10 
 # window assignments
 assign [class="Firefox"] $ws2
 assign [class="Atom"] $ws3
-assign [class="inkscape"] $ws8
+assign [class="^Inkscape$"] $ws8
 assign [class="Thunar"] $ws9
 assign [class="Spotify"] $ws0
 
@@ -327,10 +327,10 @@ bindsym $mod+f fullscreen toggle
 #bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent

@@ -1,7 +1,7 @@
 ! rofi config
 
 ! background color and opacity
-rofi.background: #a00a38
+rofi.background: #a01717
 rofi.opacity: 93
 rofi.terminal: urxvt
 
@@ -9,8 +9,8 @@ rofi.terminal: urxvt
 rofi.foreground: termfg
 
 ! selection bar color
-rofi.hlbg: #cb4266
-rofi.bc: #cb4266
+rofi.hlbg: #dc1900
+rofi.bc: #dc1900
 
 ! selection text color
 rofi.hlfg: termfg

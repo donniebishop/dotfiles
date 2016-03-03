@@ -1,20 +1,20 @@
-*color0: #200400
-*color1: #a01803
-*color2: #a05944
-*color3: #ba431f
-*color4: #ae7048
-*color5: #e07e23
-*color6: #c79272
-*color7: #e0a14a
-*color8: #c09e69
-*color9: #dcbaa6
-*color10: #e0c7ac
-*color11: #e0d2bd
-*color12: #e0bfb6
-*color13: #e0d6ca
-*color14: #e0dbd6
-*color15: #e0e0e0
+*color0: #1e1e20
+*color1: #a01717
+*color2: #a00000
+*color3: #a00000
+*color4: #a03c26
+*color5: #a42e08
+*color6: #dc1900
+*color7: #b1563c
+*color8: #c0531c
+*color9: #d88663
+*color10: #e0a182
+*color11: #e09e8e
+*color12: #e0b89c
+*color13: #e0c3ae
+*color14: #e0ccc0
+*color15: #e0d8d1
 
-#define termbg #200400
-#define termfg #e0e0e0
+#define termbg #1e1e20
+#define termfg #e0d8d1
 
