@@ -1,7 +1,8 @@
 *color0: #1e1e20
 *color1: #a01717
 *color2: #a00000
-*color3: #a00000
+!*color3: #a00000
+*color3: #aa0d0d
 *color4: #a03c26
 *color5: #a42e08
 *color6: #dc1900

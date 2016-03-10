@@ -14,9 +14,7 @@ GTK Icon Theme: [ultra-flat-icons](https://aur.archlinux.org/ultra-flat-icons.gi
 
 Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-darker-theme/)
 
-Terminal Font: [Hack](https://aur.archlinux.org/otf-hack.git)
-
-System Font: [Open Sans](https://aur.archlinux.org/ttf-opensans.git)
+Terminal Font: Hack
 
 Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 
@@ -38,6 +36,7 @@ Packages to Install
 
 * mopidy (MPD replacement)
   * ncmpcpp (MPD client and music player)
+  * mpc (Commandline controller for music playback)
 
 * [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)
 
@@ -46,5 +45,3 @@ Packages to Install
 * [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
-
-* [playerctl](https://aur.archlinux.org/playerctl.git) (music player controller)
