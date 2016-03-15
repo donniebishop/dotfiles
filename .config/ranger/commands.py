@@ -77,9 +77,9 @@ class setbg(Command):
         return self._tab_directory_content()
 
 class setbg_always(Command):
-    """setbg_always <image>
+    """:setbg_always <image>
 
-    Permanently set background to desired image. Symlinks image to ~/Pictures/wallpaper
+    Permanently set background to desired image. Symlinks image to ~/Pictures/wallpaper.jpg
     """
 
     def execute(self):
@@ -94,19 +94,19 @@ class setbg_always(Command):
     def tab(self):
         return self._tab_directory_content()
 
-class download(Command):
-    """:download <web link>
-
-    Runs wget on the specified link and saves it to the current directory.
-    """
-
-    def execute(self):
-        if self.arg(1):
-            www = self.arg(1)
-            self.fm.run("wget " + www)
-        else:
-            return "Please enter a valid link to download!"
-
-    def tab(self):
-        return self._tab_directory_content()
+#class download(Command):
+#    """:download <web link>
+#
+#    Runs wget on the specified link and saves it to the current directory.
+#    """
+#
+#    def execute(self):
+#        if self.arg(1):
+#            www = self.arg(1)
+#            self.fm.run("wget " + www)
+#        else:
+#            return "Please enter a valid link to download!"
+#
+#    def tab(self):
+#        return self._tab_directory_content()
 

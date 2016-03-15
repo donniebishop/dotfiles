@@ -6,7 +6,8 @@
 urxvt*background: termbg
 urxvt*foreground: termfg
 
-urxvt*font: xft:Hack:style=Regular:size=8
+urxvt*font: xft:Hack:size=8
+!urxvt*font: --Hack-----------iso8859-
 urxvt*url-launcher: firefox
 urxvt*internalBorder: 20
 urxvt*cursorBlink: 1

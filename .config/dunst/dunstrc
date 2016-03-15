@@ -149,7 +149,7 @@
 
 [frame]
     width = 3
-    color = "#aaaaaa"
+    color = "#e0cac7"
 
 [shortcuts]
 
@@ -189,6 +189,11 @@
     foreground = "#e0cac7"
     timeout = 0
 
+#[now-playing]
+    #summary = Mopidy
+    #appname = notify-send
+    #urgency = low
+    #format = "<b>%s</b>\n%b"
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

@@ -11,7 +11,7 @@
 # custom PS1
 #PS1='\u@\h \W \[\e[1;35m\]\$\[\e[m\] '
 # minimal PS1
-PS1='\w \[\e[1;35m\]\$\[\e[m\] '
+PS1='\W \[\e[1;32m\]\$\[\e[m\] '
 
 # use vim as editor
 if [[ -x /usr/bin/vim ]]
@@ -21,19 +21,19 @@ then
 fi
 
 # python virtualenvwrapper
-#export WORKON_HOME="~/.venvs"
-#source /usr/bin/virtualenvwrapper.sh
+export WORKON_HOME="~/.venvs"
+source /usr/bin/virtualenvwrapper.sh
 
 # ls aliases
 alias ls='ls --color=auto'
 alias lsa='ls -A --color=auto'
 alias lsl='ls -lh --color=auto'
 alias lsla='ls -Alh --color=auto'
+alias lso='ls -A | grep --color=auto'
 alias lsr='ls -R'
 alias lslr='ls -lR'
 alias lsd='ls -d */'
 alias lsld='ls -dl */'
-alias lso='ls -A | grep --color=auto'
 alias lslo='ls -Alh | grep --color=auto'
 alias lsonly='ls -A | grep --color=auto'
 alias lslonly='ls -Alh | grep --color=auto'
@@ -44,13 +44,13 @@ then
     alias searchlogs='journalctl -b --no-pager | grep'
 fi
 
-### package manager helpers
+# package manager helpers
 # ARCH - Pacman
 if [[ -x /usr/bin/pacman ]]
 then
     alias supacins='sudo pacman -S '
     alias supacrem='sudo pacman -R '
-    alias supacupd='sudo pacman -Syyu'
+    alias supacupd='sudo pacman -Syu'
     alias supacclean='sudo pacman -Sc'
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si '
@@ -60,9 +60,9 @@ then
     then
         alias yaouins='yaourt -S '
         alias yaourem='yaourt -R '
-        alias yaoupdate='yaourt -Syu --aur'
-        alias aursearch='yaourt -Ss '
-        alias aurinfo='yaourt -Si '
+        alias yaoupd='yaourt -Syu --aur'
+        alias pacsearch='yaourt -Ss '
+        alias pacinfo='yaourt -Si '
     fi
 
     # makepkg alias, for better everything
@@ -100,4 +100,5 @@ alias xrdbreload='xrdb ~/.Xresources'
 alias sudo='sudo '
 alias symlink='sudo ln -s'
 alias wtfis='whatis '
-
+alias chkexit='echo $?'
+alias feh='feh --geometry 900x600'

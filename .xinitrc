@@ -8,9 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
     xrdb -merge $sysresources
-
 fi
 
 if [ -f $sysmodmap ]; then
@@ -18,9 +16,7 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -43,10 +39,11 @@ fi
 # exec xterm -geometry 80x66+0+0 -name login
 
 # after loading vbox kernel mods, load Guest Additions
-/usr/bin/VBoxClient-all
+#/usr/bin/VBoxClient-all
 
+# startup i3
 exec i3
 
-# start Thunar as daemon for quickloading
-thunar --daemon
+# check for package updates
+#exec /usr/local/bin/check_updates.sh
 
