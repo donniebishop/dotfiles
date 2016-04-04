@@ -152,7 +152,7 @@ bar {
         status_command i3blocks
         tray_output primary
         position top
-        font pango: Awesome 8
+        font pango: Awesome 9, Noto Sans 9
         colors {
                 background  $termbg
                 statusline  $termfg
@@ -243,23 +243,26 @@ mode "$mode_gaps_outer" {
 #  power options  #
 ################### 
 
-set $Locker /usr/local/bin/py3lock.py && sleep 1
+#set $Locker /usr/local/bin/py3lock.py && sleep 1
+#
+#set $mode_system System: (L) Logout, (R) Reboot, (S) Shutdown
+#mode "$mode_system" {
+#    #bindsym l exec --no-startup-id $Locker, mode "default"
+#    #bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+#    #bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+#    bindsym Shift+l exec --no-startup-id i3-msg exit, mode "default"
+#    bindsym Shift+r exec --no-startup-id systemctl reboot, mode "default"
+#    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+#
+#    # back to normal: Enter or Escape
+#    bindsym Return mode "default"
+#    bindsym Escape mode "default"
+#}
+#
+#bindsym $mod+Escape mode "$mode_system"
 
-set $mode_system System: (L) Logout, (R) Reboot, (S) Shutdown
-mode "$mode_system" {
-    #bindsym l exec --no-startup-id $Locker, mode "default"
-    #bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-    #bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-    bindsym Shift+l exec --no-startup-id i3-msg exit, mode "default"
-    bindsym Shift+r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-bindsym $mod+Escape mode "$mode_system"
+## Above power menu config commented and deprecated for this awesomeness
+bindsym $mod+Escape exec --no-startup-id /usr/local/bin/power_menu.sh
 
 
 #################
