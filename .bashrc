@@ -102,3 +102,6 @@ alias symlink='sudo ln -s'
 alias wtfis='whatis '
 alias chkexit='echo $?'
 alias feh='feh --geometry 900x600'
+
+# options
+shopt -s autocd
