@@ -14,7 +14,7 @@ set $termfg     #e0d8d1
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
-exec_always --no-startup-id /usr/bin/compton -bC -o 0.5 --config /home/dbishop/.config/compton.conf
+exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
 
 # load up default terminal config for ws1, and then fire off some default progs
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/dbishop/.config/i3/ws1.json'"
