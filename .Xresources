@@ -4,8 +4,8 @@
 !#include ".Xresources.d/themes/"
 
 !#include ".Xresources.d/themes/cmyk"
-!#include ".Xresources.d/themes/donut"
-#include ".Xresources.d/themes/kiss_shot"
+#include ".Xresources.d/themes/donut"
+!#include ".Xresources.d/themes/kiss_shot"
 !#include ".Xresources.d/themes/sky"
 !#include ".Xresources.d/themes/sunsetcity"
 

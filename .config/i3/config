@@ -9,8 +9,8 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $termbg     #1e1e20
-set $termfg     #e0d8d1
+set $termbg     #200c02
+set $termfg     #e0dfd9
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
