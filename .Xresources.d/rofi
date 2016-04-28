@@ -1,24 +1,8 @@
-! rofi config
-
-! background color and opacity
-rofi.background: #a01717
-rofi.opacity: 93
-rofi.terminal: urxvt
-
-! text color
-rofi.foreground: termfg
-
-! selection bar color
-rofi.hlbg: #dc1900
-rofi.bc: #dc1900
-
-! selection text color
-rofi.hlfg: termfg
-
-rofi.eh: 3
-rofi.width: 100
-rofi.padding: 300
-rofi.lines: 4
-rofi.line-margin: 5
-rofi.hide_scrollbar: True
-rofi.scrollbar_width: 0
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #d8b67b, #d8b67b, #200c02
+rofi.color-normal: #d8b67b, #200c02, #d8b67b, #e0dfd9, #200c02
+rofi.color-active: #fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
