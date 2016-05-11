@@ -9,8 +9,11 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $termbg     #200c02
-set $termfg     #e0dfd9
+set $termbg #200c02
+set $termfg #e0dfd9
+# For use on i3 update... 
+#set_from_resource $termbg color0 #200c02
+#set_from_resource $termfg color15 #e0dfd9
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
@@ -175,7 +178,7 @@ bar {
 for_window [class="^.*"] border pixel 3
 
 # # Set inner/outer gaps
-gaps inner 15
+gaps inner 20
 gaps outer 10
 
 # Additionally, you can issue commands with the following syntax. This is
