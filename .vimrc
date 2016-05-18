@@ -16,7 +16,7 @@ runtime! archlinux.vim
 
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
  
-set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
+"set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
  
 set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
                     " Spaces are used in indents with the '>' and '<' commands
@@ -31,6 +31,7 @@ set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
 set showcmd         " Show (partial) command in status line.
 
 set number          " Show line numbers.
+set relativenumber  " Show numbers relative to the current line
 
 set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " one. The jump is only done if the match can be seen on the
@@ -85,3 +86,4 @@ set mouse=a         " Enable the use of the mouse.
  
 filetype plugin indent on
 syntax on
+
