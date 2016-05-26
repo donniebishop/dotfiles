@@ -9,8 +9,8 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $termbg #200c02
-set $termfg #e0dfd9
+set $termbg #0f0320
+set $termfg #e0d8d1
 # For use on i3 update... 
 #set_from_resource $termbg color0 #200c02
 #set_from_resource $termfg color15 #e0dfd9
@@ -175,10 +175,10 @@ bar {
 ####################
 
 # Disable window titlebars entirely
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 5
 
 # # Set inner/outer gaps
-gaps inner 20
+gaps inner 15
 gaps outer 10
 
 # Additionally, you can issue commands with the following syntax. This is
