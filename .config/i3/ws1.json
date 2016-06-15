@@ -8,7 +8,7 @@
     "type": "con",
     "nodes": [
         {
-            // splitv split container with 2 children
+            // splitv split container with 3 children
             "border": "pixel",
             "floating": "auto_off",
             "layout": "splitv",
@@ -17,7 +17,7 @@
             "nodes": [
                 {
                     "border": "pixel",
-                    "current_border_width": 2,
+                    "current_border_width": 5,
                     "floating": "auto_off",
                     "geometry": {
                        "height": 316,
@@ -25,8 +25,30 @@
                        "x": 0,
                        "y": 0
                     },
-                    "name": "introterm",
-                    "percent": 0.45,
+                    "name": "ncmpcpp",
+                    "percent": 0.35,
+                    "swallows": [
+                       {
+                       "class": "^URxvt$",
+                       "instance": "^urxvt$",
+                       // "title": "^Gotye\\ \\-\\ Save\\ Me$",
+                       "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 5,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 328,
+                       "width": 600,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "htop",
+                    "percent": 0.158333333333333,
                     "swallows": [
                        {
                        "class": "^URxvt$",
@@ -39,7 +61,7 @@
                 },
                 {
                     "border": "pixel",
-                    "current_border_width": 2,
+                    "current_border_width": 5,
                     "floating": "auto_off",
                     "geometry": {
                        "height": 316,
@@ -47,8 +69,8 @@
                        "x": 0,
                        "y": 0
                     },
-                    "name": "htop",
-                    "percent": 0.55,
+                    "name": "rainbowstream",
+                    "percent": 0.491666666666667,
                     "swallows": [
                        {
                        "class": "^URxvt$",
@@ -66,7 +88,7 @@
 
 {
     "border": "pixel",
-    "current_border_width": 2,
+    "current_border_width": 5,
     "floating": "auto_off",
     "geometry": {
        "height": 316,
@@ -74,15 +96,16 @@
        "x": 0,
        "y": 0
     },
-    "name": "main_term",
+    "name": "mainterm",
     "percent": 0.55,
     "swallows": [
        {
        "class": "^URxvt$",
        "instance": "^urxvt$",
-       // "title": "^dbishop\\@archetype\\:\\~$",
+       // "title": "^dbishop\\@archetype\\:\\~\\/\\.config\\/i3$",
        "transient_for": "^$"
        }
     ],
     "type": "con"
 }
+
