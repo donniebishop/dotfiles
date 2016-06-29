@@ -34,6 +34,7 @@ bindsym $wmod+Left exec --no-startup-id mpc prev
 #bindsym $wmod+Shift+Right exec --no-startup-id mpc seek +0:0:7
 #bindsym $wmod+Shift+Left exec --no-startup-id mpc seek -0:0:7
 bindsym $wmod+space exec --no-startup-id mpc toggle
+bindsym $wmod+z exec --no-startup-id mpc random
 
 # vim-keybindings for movement
 # change focus
