@@ -3,7 +3,7 @@
 UPDATES=$(checkupdates | wc -l)
 
 if [ "$UPDATES" > 0 ]; then
-    exit 0
+    sleep 180
 else
     echo "  $UPDATES"
 fi
