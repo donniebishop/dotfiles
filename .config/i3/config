@@ -116,6 +116,7 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Display"] floating enable
 for_window [class="Zenmap"] floating enable
 for_window [class="Thunar"] floating enable
+for_window [class="Yad"] floating enable
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -143,10 +144,12 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 # borders
 # termfg border on focus; blend with termbg if not
-client.focused              $termfg  $termfg  $white
-client.unfocused            $termbg  $termbg  $alive
-client.focused_inactive     $termbg  $termbg  $alive
-client.urgent               $termfg  $termfg  $white
+# 
+# state                     border   bg       text    indicator
+client.focused              $termfg  $termfg  $white  $termfg
+client.unfocused            $termbg  $termbg  $alive  $termbg
+client.focused_inactive     $termbg  $termbg  $alive  $termbg
+client.urgent               $termfg  $termfg  $white  $termfg
 
 
 ###########

@@ -2,8 +2,8 @@
 
 UPDATES=$(checkupdates | wc -l)
 
-if [ "$UPDATES" > 0 ]; then
-    sleep 180
+if [ "$UPDATES" -gt 0 ]; then
+    echo " $UPDATES"
 else
-    echo "  $UPDATES"
+    exit 0
 fi
