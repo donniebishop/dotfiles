@@ -8,17 +8,17 @@ rofi.color-enabled: true
 
 ! -color-window background, border color, separator color
 !
-rofi.color-window: #a04a87, #a04a87, #e0dfd9
+rofi.color-window: #96a1e0, #96a1e0, #e0e0df
 
 
 ! -color-normal background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-normal: #a04a87, #e0dfd9, #a04a87, #e0dfd9, #200c02
+rofi.color-normal: #96a1e0, #e0e0df, #96a1e0, #e0e0df, #1c1c20
 
 
 ! -color-active background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-active: #e0d8d1, #268bd2, #eee8d5, #268bd2, #fdf6e3
+rofi.color-active: #96a1e0, #e0e0df, #96a1e0, #e0e0df, #1c1c20
 
 
 ! -color-urgent background, foreground, background alt, highlight background, highlight foreground

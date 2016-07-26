@@ -6,9 +6,10 @@
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
 !#include ".Xresources.d/themes/kiss_shot"
-#include ".Xresources.d/themes/senjou"
+!#include ".Xresources.d/themes/senjou"
 !#include ".Xresources.d/themes/sky"
 !#include ".Xresources.d/themes/sunsetcity"
+#include ".Xresources.d/themes/touka"
 
 ! Some font rendering fixings
 Xft.dpi:        96
