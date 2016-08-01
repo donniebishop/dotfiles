@@ -14,9 +14,10 @@ import subprocess
 
 status = subprocess.check_output(['mpc', 'status']).decode('UTF-8')
 current = subprocess.check_output(['mpc', 'current']).decode('UTF-8').strip('\n')
+current = current.replace(';', ', ')
 
 if '[playing]' in status:
-    print(current, ' ')
+    print(current, '')
 elif '[paused]' in status:
-    print(current, ' ')
+    print(current, '')
 

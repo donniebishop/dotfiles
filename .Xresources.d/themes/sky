@@ -1,0 +1,19 @@
+*color0: #070a20
+*color1: #2740a0
+*color2: #1938a0
+*color3: #1e41ab
+*color4: #2f4ca3
+*color5: #3055bc
+*color6: #4960b0
+*color7: #4869c6
+*color8: #5e78c0
+*color9: #b596c8
+*color10: #7e8fcb
+*color11: #a89ac8
+*color12: #b5a6c9
+*color13: #d99db1
+*color14: #d9becb
+*color15: #e0cac7
+
+#define termbg #070a20
+#define termfg #e0cac7
