@@ -1,8 +1,6 @@
 ! Commented lines start with '!'
 
-! Import colorscheme first
-!#include ".Xresources.d/themes/"
-
+! Import theme colors
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
 !#include ".Xresources.d/themes/kiss_shot"
@@ -19,7 +17,10 @@ Xft.antialias:  true
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
-! Import term and rofi configs last
+! Import rofi theme
+!#include ".Xresources.d/rofi/donut.rofi"
+!#include ".Xresources.d/rofi/senjou.rofi"
+#include ".Xresources.d/rofi/touka.rofi"
+
 #include ".Xresources.d/urxvt"
-#include ".Xresources.d/rofi"
 

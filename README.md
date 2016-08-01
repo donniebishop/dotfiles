@@ -46,4 +46,4 @@ Packages to Install
 
 * [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
-* [rainbowstream](https://aur.archlinux.org/rainbowstream.git)
+* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (terminal Twitter)
