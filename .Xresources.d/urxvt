@@ -3,15 +3,31 @@
 ! Default term options
 
 ! termbg and termfg defined in each theme
+!
 urxvt*background: termbg
 urxvt*foreground: termfg
 
-urxvt*font: xft:Hack:size=8
+! Tewi Font
+!
+urxvt*font: xft:Tewi:size=8
+urxvt.letterSpace: 1
+
+! Yuki Font
+!
+!urxvt*font: xft:yuki:size=8
+!urxvt.letterSpace: 1
+
+!Hack Font
+!
+!urxvt*font: xft:Hack:size=8
 !urxvt*font: --Hack-----------iso8859-
+!urxvt.letterSpace: -1
+
+! Use firefox for internets
 urxvt*url-launcher: firefox
+
 urxvt*internalBorder: 20
 urxvt*cursorBlink: 1
-URxvt.letterSpace: -1
 
 ! Transparency
 !
@@ -20,5 +36,14 @@ URxvt.letterSpace: -1
 
 ! Scrollbar
 !
-urxvt*scrollBar: false
-!urxvt*scrollColor: #4d5265
+urxvt*scrollBar: off
+
+! Clipboard enable
+!
+URxvt.keysym.C-M-c: builtin-string:
+URxvt.keysym.C-M-v: builtin-string:
+
+! Perl Extensions
+!
+URxvt.perl-ext-common: selection-to-clipboard
+
