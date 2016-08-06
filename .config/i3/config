@@ -9,14 +9,15 @@ set $mod Mod1
 set $wmod Mod4
 
 # custom colors
-set $termbg #0f0320
-set $termfg #e0d8d1
-# For use on i3 update... 
-#set_from_resource $termbg color0 #200c02
-#set_from_resource $termfg color15 #e0dfd9
+#set $termbg #1c1c20
+#set $termfg #e0e0df
+
+# For use on i3-gaps devel version
+set_from_resource $termbg color0 #000000
+set_from_resource $termfg color15 #ffffff
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
 
 # load up default terminal config for ws1, and then fire off some default progs
@@ -25,7 +26,7 @@ exec --no-startup-id "i3-msg exec urxvt\; exec urxvt\; exec urxvt\; exec urxvt"
 exec --no-startup-id firefox
 
 # custom key assignments
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
 bindsym $mod+m exec --no-startup-id rofi -show run
 
 # mpc bindings (ncmpcpp control
@@ -34,7 +35,9 @@ bindsym $wmod+Left exec --no-startup-id mpc prev
 #bindsym $wmod+Shift+Right exec --no-startup-id mpc seek +0:0:7
 #bindsym $wmod+Shift+Left exec --no-startup-id mpc seek -0:0:7
 bindsym $wmod+space exec --no-startup-id mpc toggle
+bindsym $wmod+s exec --no-startup-id mpc single
 bindsym $wmod+z exec --no-startup-id mpc random
+bindsym $wmod+x exec --no-startup-id mpc stop
 
 # vim-keybindings for movement
 # change focus
@@ -115,8 +118,10 @@ for_window [class="feh"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Display"] floating enable
 for_window [class="Zenmap"] floating enable
+for_window [class="Leafpad"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Yad"] floating enable
+for_window [class="Vlc"] floating enable
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

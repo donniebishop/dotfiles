@@ -8,12 +8,8 @@ parser.add_argument('infile', help='Input file to shuffle')
 parser.add_argument('-o', '--outfile', help='Optional file to output to.')
 args = parser.parse_args()
 
-def shuffle(list):
-    new_order = []
-    for i in range(len(list)):
-        current = list.pop(randint(0, len(list) - 1))
-        new_order.append(current)
-    return new_order
+def shuffle(alist):
+    return [alist.pop(randint(0, len(alist)-1)) for i in range(len(alist))]
 
 with open(args.infile, 'r+') as infile:
     lines = [line for line in infile.readlines()]
@@ -26,5 +22,4 @@ with open(args.infile, 'r+') as infile:
     elif args.outfile:
         with open(args.outfile, 'w') as outfile:
             [outfile.write(line) for line in newlines]
-
 

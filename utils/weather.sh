@@ -31,6 +31,7 @@ declare -A state_icons=( \
 	["Light_Snow"]="" \
 	["Light_Snow_Showers"]="" \
 	["Partly_Cloudy"]="/" \
+  ["Rain"]="" \
 	["Sunny"]="" \
 	["Thundery_Heavy_Rain"]="/" \
 	["Thundery_Showers"]=""  \
