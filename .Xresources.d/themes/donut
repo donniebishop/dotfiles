@@ -1,3 +1,5 @@
+!Donut
+!---------------
 *color0: #200c02
 *color1: #a06f4c
 *color2: #a05327
@@ -17,4 +19,7 @@
 
 #define termbg #200c02
 #define termfg #e0dfd9
+
+! import rofi
+#include "../rofi/donut.rofi"
 

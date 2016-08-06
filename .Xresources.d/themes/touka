@@ -1,3 +1,5 @@
+!Touka
+!--------------
 *color0: #1c1c20
 *color1: #6b7da0
 *color2: #a08d5d
@@ -17,3 +19,7 @@
 
 #define termbg #1c1c20
 #define termfg #e0e0df
+
+! import rofi
+#include "../rofi/touka.rofi"
+
