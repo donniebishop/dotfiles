@@ -27,7 +27,7 @@ exec --no-startup-id firefox
 
 # custom key assignments
 bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
-bindsym $mod+m exec --no-startup-id rofi -show run
+bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run
 
 # mpc bindings (ncmpcpp control
 bindsym $wmod+Right exec --no-startup-id mpc next
