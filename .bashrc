@@ -20,6 +20,7 @@ then
     export EDITOR=/usr/bin/vim
     export VISUAL=$EDITOR
     alias view='vim -R'
+    alias vimtab='vim -p'
 fi
 
 # ls aliases
@@ -82,13 +83,16 @@ then
 fi
 
 # git aliases
-alias gstat='git status '
-alias gadd='git add '
-alias gcommit='git commit '
-alias gclone='git clone '
-alias gpull='git pull '
-alias gpush='git push '
-alias glog='git log -3'
+if [[ -x /usr/bin/git ]]
+then
+    alias gstat='git status '
+    alias gadd='git add '
+    alias gcommit='git commit '
+    alias gclone='git clone '
+    alias gpull='git pull '
+    alias gpush='git push '
+    alias glog='git log -3'
+fi
 
 # python stuff
 export PYTHONDONTWRITEBYTECODE=1    # no more stupid .pyc files

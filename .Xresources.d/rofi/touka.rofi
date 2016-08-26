@@ -2,7 +2,7 @@
 ! ROFI Color theme - Touka
 ! ------------------------------------------------------------------------------
 
-rofi.font: Tewi 10
+rofi.font: Tewi 9
 rofi.color-enabled: true
 
 
