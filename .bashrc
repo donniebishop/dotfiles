@@ -13,6 +13,7 @@
 # minimal PS1
 PS1='\W \[\e[1;32m\]\$\[\e[m\] '
 
+
 # use vim as editor
 if [[ -x /usr/bin/vim ]]
 then
@@ -22,6 +23,7 @@ then
     alias view='vim -R'
     alias vimtab='vim -p'
 fi
+
 
 # ls aliases
 alias ls='ls --color=auto'
@@ -37,14 +39,16 @@ alias lslo='ls -Alh | grep --color=auto'
 alias lsonly='ls -A | grep --color=auto'
 alias lslonly='ls -Alh | grep --color=auto'
 
+
 # systemd things
 if [[ -x /usr/bin/journalctl ]]
 then   
     alias searchlogs='journalctl -b --no-pager | grep'
 fi
 
-# package manager helpers
-# ARCH - Pacman
+
+### package manager aliases
+# Arch - Pacman
 if [[ -x /usr/bin/pacman ]]
 then
     alias supacins='sudo pacman -S '
@@ -55,22 +59,18 @@ then
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si '
 
-    # Yaourt aliases, if installed
+    # Arch - Yaourt
     if [[ -x /usr/bin/yaourt ]]
     then
         alias yaouins='yaourt -S '
         alias yaourem='yaourt -R '
         alias yaoupd='yaourt -Syu --aur'
+        alias getpkgbuild='yaourt -G '
         alias pacsearch='yaourt -Ss '
         alias pacinfo='yaourt -Si '
     fi
-
-    # makepkg alias, for better everything
-    if [[ -x /usr/bin/makepkg ]]
-    then
-        alias makepkg='makepkg -sri'
-    fi
 fi
+
 
 # RHEL/CentOS - Yum
 if [[ -x /usr/bin/yum ]]
@@ -82,6 +82,7 @@ then
     alias suyumclean='sudo yum clean all'
 fi
 
+
 # git aliases
 if [[ -x /usr/bin/git ]]
 then
@@ -89,10 +90,15 @@ then
     alias gadd='git add '
     alias gcommit='git commit '
     alias gclone='git clone '
+    alias glog='git log -3'
     alias gpull='git pull '
     alias gpush='git push '
-    alias glog='git log -3'
+    alias gdiff='git diff'
+    alias gunstage='git reset HEAD '
+    alias gresetchanges='git checkout --'
+    alias gswitch='git checkout'
 fi
+
 
 # python stuff
 export PYTHONDONTWRITEBYTECODE=1    # no more stupid .pyc files
@@ -103,12 +109,27 @@ alias unittest='python -m unittest'
 #export WORKON_HOME="~/.venvs"
 #source /usr/bin/virtualenvwrapper.sh
 
+
 # /r/unixporn related
 alias i3config='vim ~/.config/i3/config'
+alias blockconfig='vim ~/.i3blocks.conf'
 alias vixres='vim ~/.Xresources'
 alias xrdbreload='xrdb ~/.Xresources'
 alias fetch='neofetch --crop_mode fit'
 alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
+
+
+# ur waifu is trash
+if [[ -x /usr/bin/trash-put ]]
+then
+    alias rm='trash-put'
+    alias lstrash='trash-list'
+    alias emptrash='trash-empty'
+    alias trashres='trash-restore'
+    alias trashrm='trash-rm'
+    alias reallyrm='/usr/bin/rm'
+fi
+
 
 # random things
 alias sudo='sudo '
@@ -122,8 +143,10 @@ alias ncmpcpp='ncmpcpp; clear'
 alias nowplaying='mpc current'
 alias follow='tail -f'
 
+
 # shell options
 shopt -s autocd
+
 
 # perl... for urxvt copy and paste... that's it, I swear.
 PATH="/home/dbishop/perl5/bin${PATH+:}${PATH}"; export PATH;

@@ -6,7 +6,7 @@ It's safe to assume that if it's not linked, it can be installed directly via pa
 Main Attractions
 ----------------
 
-WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-git.git)
+WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-next-git.git)
 
 GTK Theme: [Arc](https://aur.archlinux.org/gtk-theme-arc-git.git)
 
@@ -23,9 +23,9 @@ Packages to Install
 
 * xorg-server, xrdb (X11 Server and X Resources Database)
 
-* lxappearance (GTK config manager)
-
 * rxvt-unicode (terminal)
+
+* lxappearance (GTK config manager)
 
 * thunar (file manager)
 
@@ -34,16 +34,22 @@ Packages to Install
 
 * alsa-utils (ALSA Mixer and sound utilities)
 
-* mopidy (MPD replacement)
-  * ncmpcpp (MPD client and music player)
+* ncmpcpp (MPD client and music player)
+  * mopidy (MPD replacement) 
   * mpc (Commandline controller for music playback)
+
+* trash-cli (for all your waifus)
 
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
 
-* [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)
-
 * [compton](https://aur.archlinux.org/compton.git) (screen compositor)
+
+* [i3-blocks](https://aur.archlinux.org/i3blocks-gaps-git.git) (i3bar statusline)
+
+* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (terminal Twitter)
 
 * [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
-* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (terminal Twitter)
+* [smugfetch](https://aur.archlinux.org/neofetch-git.git) (system stats)
+
+* [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)
