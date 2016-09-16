@@ -20,7 +20,13 @@ import os
 import subprocess
 
 if os.environ['BLOCK_BUTTON'] == '1':
+    subprocess.run(['mpc', 'prev'])
+    print(current)
+elif os.environ['BLOCK_BUTTON'] == '2':
     subprocess.run(['mpc', 'toggle'])
+    print(current)
+elif os.environ['BLOCK_BUTTON'] == '3':
+    subprocess.run(['mpc', 'next'])
     print(current)
 
 status = subprocess.check_output(['mpc', 'status']).decode('UTF-8')

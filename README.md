@@ -1,6 +1,7 @@
 dotfiles
 ========
-My customizations. Lots of stuff stolen from /r/unixporn. Packages with links are to the git repositories or AUR links.
+My customizations. Lots of stuff stolen from /r/unixporn.
+Packages with links are to the git repositories or AUR links.
 It's safe to assume that if it's not linked, it can be installed directly via pacman :)
 
 Main Attractions
@@ -10,35 +11,38 @@ WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-next-git.git)
 
 GTK Theme: [Arc](https://aur.archlinux.org/gtk-theme-arc-git.git)
 
-GTK Icon Theme: [ultra-flat-icons](https://aur.archlinux.org/ultra-flat-icons.git)
+GTK Icon Theme: [Super Flat Remix](https://aur.archlinux.org/super-flat-remix-icon-theme.git)
 
 Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-darker-theme/)
 
-Terminal Font: [Tewi](https://aur.archlinux.org/bdf-tewi-git.git)
-
 Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 
-Packages to Install
--------------------
+Terminal Font: [Tewi](https://aur.archlinux.org/bdf-tewi-git.git)
 
-* xorg-server, xrdb (X11 Server and X Resources Database)
+Terminal: rxvt-unicode 
 
-* rxvt-unicode (terminal)
-
-* lxappearance (GTK config manager)
-
-* thunar (file manager)
-
-* ranger (command line file manager)
-  * w3m (for image previews)
+Core Packages
+-------------
 
 * alsa-utils (ALSA Mixer and sound utilities)
+
+* lxappearance (GTK config manager)
 
 * ncmpcpp (MPD client and music player)
   * mopidy (MPD replacement) 
   * mpc (Commandline controller for music playback)
 
+* ranger (command line file manager)
+  * w3m (for image previews)
+
+* thunar (file manager)
+
 * trash-cli (for all your waifus)
+
+* xorg-server, xrdb (X11 Server and X Resources Database)
+
+AUR Packages
+------------
 
 * [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
 

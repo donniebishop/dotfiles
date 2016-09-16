@@ -23,7 +23,7 @@ exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/
 # load up default terminal config for ws1, and then fire off some default progs
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/dbishop/.config/i3/ws1.json'"
 exec --no-startup-id "i3-msg exec urxvt\; exec urxvt\; exec urxvt\; exec urxvt"
-exec --no-startup-id firefox
+#exec --no-startup-id firefox
 exec --no-startup-id "thunar --daemon"
 
 # custom key assignments

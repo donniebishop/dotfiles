@@ -51,23 +51,36 @@ fi
 # Arch - Pacman
 if [[ -x /usr/bin/pacman ]]
 then
-    alias supacins='sudo pacman -S '
-    alias supacrem='sudo pacman -R '
-    alias supacfullrem='sudo pacman -Rc '
+    alias supacins='sudo pacman -S'
+    alias supacrem='sudo pacman -R'
+    alias supacfullrem='sudo pacman -Rc'
     alias supacupd='sudo pacman -Syu'
     alias supacclean='sudo pacman -Sc'
     alias pacsearch='pacman -Ss '
-    alias pacinfo='pacman -Si '
+    alias pacinfo='pacman -Si'
 
     # Arch - Yaourt
     if [[ -x /usr/bin/yaourt ]]
     then
-        alias yaouins='yaourt -S '
-        alias yaourem='yaourt -R '
+        alias yaouins='yaourt -S'
+        alias yaourem='yaourt -R'
         alias yaoupd='yaourt -Syu --aur'
-        alias getpkgbuild='yaourt -G '
-        alias pacsearch='yaourt -Ss '
-        alias pacinfo='yaourt -Si '
+        alias getpkgbuild='yaourt -G'
+        alias pacsearch='yaourt -Ss'
+        alias pacinfo='yaourt -Si'
+    fi
+
+    # Arch - Pacaur
+    if [[ -x /usr/bin/pacaur ]]
+    then
+        alias supacins='pacaur -S'
+        alias supacrem='pacaur -R'
+        alias supacfullrem='pacaur -Rc'
+        alias supacupd='pacaur -Syu'
+        alias pacsearch='pacaur -Ss'
+        alias pacinfo='pacaur -Si'
+        alias getpkgbuild='pacaur -d'
+        alias getpkgmakepkg='pacaur -m'
     fi
 fi
 
@@ -94,6 +107,7 @@ then
     alias gpull='git pull '
     alias gpush='git push '
     alias gdiff='git diff'
+    alias gamend='git commit --amend'
     alias gunstage='git reset HEAD '
     alias gresetchanges='git checkout --'
     alias gswitch='git checkout'
@@ -101,18 +115,18 @@ fi
 
 
 # python stuff
-export PYTHONDONTWRITEBYTECODE=1    # no more stupid .pyc files
 alias venv='virtualenv '
 alias venv2='virtualenv -p "$(which python2)"'
 alias actvenv='source bin/activate'
 alias unittest='python -m unittest'
 #export WORKON_HOME="~/.venvs"
 #source /usr/bin/virtualenvwrapper.sh
+export PYTHONDONTWRITEBYTECODE=1    # no more stupid .pyc files
 
 
 # /r/unixporn related
 alias i3config='vim ~/.config/i3/config'
-alias blockconfig='vim ~/.i3blocks.conf'
+alias viblocks='vim ~/.i3blocks.conf'
 alias vixres='vim ~/.Xresources'
 alias xrdbreload='xrdb ~/.Xresources'
 alias fetch='neofetch --crop_mode fit'
