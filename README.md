@@ -9,7 +9,7 @@ Main Attractions
 
 WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-next-git.git)
 
-GTK Theme: [Arc](https://aur.archlinux.org/gtk-theme-arc-git.git)
+GTK Theme: [Arc Darker](https://aur.archlinux.org/gtk-theme-arc-git.git)
 
 GTK Icon Theme: [Super Flat Remix](https://aur.archlinux.org/super-flat-remix-icon-theme.git)
 
@@ -17,7 +17,7 @@ Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-d
 
 Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
 
-Terminal Font: [Tewi](https://aur.archlinux.org/bdf-tewi-git.git)
+Terminal Font: [Tewi](https://aur.achlinux.org/bdf-tewi-git.git)
 
 Terminal: rxvt-unicode 
 
@@ -30,9 +30,9 @@ Core Packages
 
 * ncmpcpp (MPD client and music player)
   * mopidy (MPD replacement) 
-  * mpc (Commandline controller for music playback)
+  * mpc (music controls)
 
-* ranger (command line file manager)
+* ranger (ncurses file manager)
   * w3m (for image previews)
 
 * thunar (file manager)
@@ -48,12 +48,12 @@ AUR Packages
 
 * [compton](https://aur.archlinux.org/compton.git) (screen compositor)
 
-* [i3-blocks](https://aur.archlinux.org/i3blocks-gaps-git.git) (i3bar statusline)
+* [i3blocks](https://aur.archlinux.org/i3blocks.git) (i3bar statusline)
 
-* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (terminal Twitter)
+* [pacaur](https://aur.archlinux.org/pacaur.git) (AUR package helper)
+
+* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (Twitter in terminal)
 
 * [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
 
 * [smugfetch](https://aur.archlinux.org/neofetch-git.git) (system stats)
-
-* [yaourt](https://aur.archlinux.org/yaourt.git) (AUR package installer)

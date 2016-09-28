@@ -30,7 +30,7 @@ exec --no-startup-id "thunar --daemon"
 bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
 bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run
 
-# mpc bindings (ncmpcpp control
+# mpc bindings (ncmpcpp control)
 bindsym $wmod+Right exec --no-startup-id mpc next
 bindsym $wmod+Left exec --no-startup-id mpc prev
 #bindsym $wmod+Shift+Right exec --no-startup-id mpc seek +0:0:7
@@ -316,7 +316,7 @@ mode "$resize" {
 ############
 
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# is used in the bar {} block.
 # font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
