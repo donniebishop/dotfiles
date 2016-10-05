@@ -132,6 +132,8 @@ alias vixres='vim ~/.Xresources'
 alias xrdbreload='xrdb ~/.Xresources'
 alias fetch='neofetch --crop_mode fit'
 alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
+alias feh='feh --geometry 900x600'
+alias ncmpcpp='ncmpcpp; clear'
 
 
 # ur waifu is trash
@@ -149,12 +151,11 @@ fi
 # random things
 alias sudo='sudo '
 alias virc='vim ~/.bashrc'
+alias vivimrc='vim ~/.vimrc'
 alias loadrc='. ~/.bashrc'
 alias symlink='sudo ln -s'
 alias wtfis='whatis '
 alias chkexit='echo $?'
-alias feh='feh --geometry 900x600'
-alias ncmpcpp='ncmpcpp; clear'
 alias nowplaying='mpc current'
 alias follow='tail -f'
 
