@@ -35,12 +35,19 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Fugitive
 Plugin 'tpope/vim-fugitive'
+
 " NERD Tree
 Plugin 'scrooloose/nerdtree'
-" Rust syntax highlighting
+
+" Airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Syntastic
+Plugin 'scrooloose/syntastic'
+
+" Rust syntax
 Plugin 'rust-lang/rust.vim'
-" Powerline
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,6 +65,25 @@ filetype plugin indent on    " required
 " 
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+"Syntastic Settings
+"--------------------
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_highlighting = 0
+let g:syntastic_rust_checkers = ['rustc']
+
+"Airline Settings
+"--------------------
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline_theme='powerlineish'
 
 "Custom Stuffs
 "--------------------
@@ -148,4 +174,3 @@ set noshowmode      " Hide the default mode text
  
 filetype plugin indent on
 syntax on
-

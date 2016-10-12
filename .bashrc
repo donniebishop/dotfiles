@@ -150,7 +150,7 @@ fi
 
 # random things
 alias sudo='sudo '
-alias virc='vim ~/.bashrc'
+alias vibashrc='vim ~/.bashrc'
 alias vivimrc='vim ~/.vimrc'
 alias loadrc='. ~/.bashrc'
 alias symlink='sudo ln -s'
