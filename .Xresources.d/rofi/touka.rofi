@@ -4,7 +4,7 @@
 
 rofi.font: Tewi 9
 rofi.color-enabled: true
-
+rofi.fullscreen: true
 
 ! -color-window background, border color, separator color
 !
