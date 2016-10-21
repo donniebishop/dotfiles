@@ -16,21 +16,24 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " Fugitive
 Plugin 'tpope/vim-fugitive'
 
 " NERD Tree
 Plugin 'scrooloose/nerdtree'
 
-" Airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Rust syntax
+Plugin 'rust-lang/rust.vim'
 
 " Syntastic
 Plugin 'scrooloose/syntastic'
 
-" Rust syntax
-Plugin 'rust-lang/rust.vim'
+" SuperTab
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

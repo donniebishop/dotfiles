@@ -39,6 +39,9 @@ Core Packages
 
 * trash-cli (for all your waifus)
 
+* vim (text editor for men)
+  * vundle (vim plugin manager)
+
 * xorg-server, xrdb (X11 Server and X Resources Database)
 
 AUR Packages
