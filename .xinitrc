@@ -38,12 +38,11 @@ fi
 # xterm -geometry 80x20+494-0 &
 # exec xterm -geometry 80x66+0+0 -name login
 
-# after loading vbox kernel mods, load Guest Additions
-#/usr/bin/VBoxClient-all
+#/usr/bin/thunar --daemon
+#sudo /usr/bin/systemctl restart mopidy.service
+#pulseaudio --start
+VBoxClient-all
 
 # startup i3
 exec i3
-
-# check for package updates
-#exec /usr/local/bin/check_updates.sh
 
