@@ -17,7 +17,7 @@ set_from_resource $termbg color0 #000000
 set_from_resource $termfg color15 #ffffff
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
-exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
 
 # load up default terminal config for ws1, and then fire off some default progs
