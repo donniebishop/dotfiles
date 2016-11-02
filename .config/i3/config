@@ -40,6 +40,15 @@ bindsym $wmod+s exec --no-startup-id mpc single
 bindsym $wmod+z exec --no-startup-id mpc random
 bindsym $wmod+x exec --no-startup-id mpc stop
 
+# mpc XF86 controls
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+
+# brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
+
 # vim-keybindings for movement
 # change focus
 bindsym $mod+h focus left
