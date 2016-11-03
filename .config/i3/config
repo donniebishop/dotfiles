@@ -49,6 +49,9 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
+# lock
+bindsym $wmod+l exec --no-startup-id i3lock-fancy -pt ''
+
 # vim-keybindings for movement
 # change focus
 bindsym $mod+h focus left
