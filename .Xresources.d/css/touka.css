@@ -21,7 +21,7 @@
     --bg-light: #536ba5; --bg-dark: #1c1c20;
     --fg-light: #e0e0df; --fg-dark: #96a1e0;
     --tab-triangle-correction: 0px;
-    --tab-height: 20px; --tab-icon-size: 10px; --tab-strip-margin: 0px; --tab-overlap: -6px;
+    --tab-height: 20px; --tab-icon-size: 10px; --tab-strip-margin: -12px; --tab-overlap: -6px;
     --tab-fonts: "Tewi",monospace,"Open Sans"; --tab-font-size: 8pt;
     --tab-text-align: center; /* left | center | right */
     --tab-triangle: block;  /* block | none */
