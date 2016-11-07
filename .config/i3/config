@@ -40,10 +40,13 @@ bindsym $wmod+s exec --no-startup-id mpc single
 bindsym $wmod+z exec --no-startup-id mpc random
 bindsym $wmod+x exec --no-startup-id mpc stop
 
-# mpc XF86 controls
+# media controls
 bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
 
 # brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 10
