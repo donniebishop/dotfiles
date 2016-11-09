@@ -24,6 +24,9 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 
 " NERD Tree
+Plugin 'scrooloose/nerdcommenter'
+
+" NERD Tree
 Plugin 'scrooloose/nerdtree'
 
 " Rust syntax
