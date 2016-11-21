@@ -1,0 +1,21 @@
+!Taiga
+!--------------
+*color0: #171d20
+*color1: #889da0
+*color2: #4472a0
+*color3: #92a09d
+*color4: #91a09e
+*color5: #92a09c
+*color6: #5587a0
+*color7: #91a099
+*color8: #768e91
+*color9: #bfc8b7
+*color10: #b9c8c0
+*color11: #bcc8c0
+*color12: #dfb382
+*color13: #c0c8c0
+*color14: #d5d9d4
+*color15: #dee0e0
+
+#define termbg #171d20
+#define termfg #dee0e0

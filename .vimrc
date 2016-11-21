@@ -16,6 +16,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+
+"Plugins
+"--------------------
+
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -28,6 +32,9 @@ Plugin 'scrooloose/nerdcommenter'
 
 " NERD Tree
 Plugin 'scrooloose/nerdtree'
+
+" Python Mode
+Plugin 'klen/python-mode'
 
 " Rust syntax
 Plugin 'rust-lang/rust.vim'
@@ -64,6 +71,12 @@ let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings"}
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline_theme='dark'
+
+"PyMode Settings
+"--------------------
+let g:pymode_options_colorcolumn = 0
+let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
+
 
 "Custom Stuffs
 "--------------------

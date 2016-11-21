@@ -55,7 +55,7 @@ then
     alias supacrem='sudo pacman -R'
     alias supacfullrem='sudo pacman -Rc'
     alias supacupd='sudo pacman -Syu'
-    alias supacclean='sudo pacman -Sc'
+    alias supacclean='sudo paccache -r'
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si'
     alias makesrcinfo='makepkg --printsrcinfo'
