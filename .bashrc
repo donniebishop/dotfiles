@@ -59,6 +59,7 @@ then
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si'
     alias makesrcinfo='makepkg --printsrcinfo'
+    alias supacremorphans='sudo pacman -Rns $(pacman -Qtdq)'
 
     # Arch - Yaourt
     if [[ -x /usr/bin/yaourt ]]
