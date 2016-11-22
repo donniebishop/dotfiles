@@ -19,3 +19,7 @@
 
 #define termbg #171d20
 #define termfg #dee0e0
+
+! import rofi
+#include "../rofi/taiga.rofi"
+

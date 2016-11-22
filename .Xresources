@@ -7,7 +7,8 @@
 !#include ".Xresources.d/themes/senjou"
 !#include ".Xresources.d/themes/sky"
 !#include ".Xresources.d/themes/sunsetcity"
-#include ".Xresources.d/themes/touka"
+#include ".Xresources.d/themes/taiga"
+!#include ".Xresources.d/themes/touka"
 
 ! Some font rendering fixings
 Xft.dpi:        96
