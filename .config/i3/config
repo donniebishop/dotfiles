@@ -81,13 +81,13 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-# b for besides. 
+# b for besides.
 bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
 
-# Change floating behaviors with space 
+# Change floating behaviors with space
 # toggle tiling / floating
 bindsym $mod+space floating toggle
 # change focus between tiling / floating windows
@@ -110,24 +110,25 @@ set $ones       #111111
 set $black      #000000
 
 # ws names
-set $ws1 
-set $ws2 
-set $ws3 
-set $ws4 
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
 set $ws5 5
 set $ws6 6
 set $ws7 7
-set $ws8 
+set $ws8 8
 set $ws9 9
-set $ws0 
+set $ws0 10
 
 # window assignments
 assign [class="Firefox"] $ws2
 assign [class="Atom"] $ws3
-assign [class="libreoffice"] $ws4
-assign [class="^Inkscape$"] $ws8
-assign [class="Gimp"] $ws8
-assign [class="Spotify"] $ws0
+assign [class="^Inkscape$"] $ws7
+assign [class="Gimp"] $ws7
+assign [class="libreoffice"] $ws8
+assign [class="Spotify"] $ws9
+assign [class="Vlc"] $ws0
 
 # floating windows
 for_window [class="feh"] floating enable
@@ -165,7 +166,7 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 
 # borders
 # termfg border on focus; blend with termbg if not
-# 
+#
 # state                     border   bg       text    indicator
 client.focused              $termfg  $termfg  $white  $termfg
 client.unfocused            $termbg  $termbg  $alive  $termbg
@@ -271,7 +272,7 @@ mode "$mode_gaps_outer" {
 
 ###################
 #  power options  #
-################### 
+###################
 
 #set $Locker /usr/local/bin/py3lock.py && sleep 1
 #
@@ -367,4 +368,3 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to exit out of i3?' -b 'Yes, exit i3' 'i3-msg exit'"
-
