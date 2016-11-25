@@ -22,6 +22,7 @@ then
     export VISUAL=$EDITOR
     alias view='vim -R'
     alias vimtab='vim -p'
+    alias viewtab='vim -Rp'
 fi
 
 
@@ -59,18 +60,6 @@ then
     alias pacsearch='pacman -Ss '
     alias pacinfo='pacman -Si'
     alias makesrcinfo='makepkg --printsrcinfo'
-    alias supacremorphans='sudo pacman -Rns $(pacman -Qtdq)'
-
-    # Arch - Yaourt
-    if [[ -x /usr/bin/yaourt ]]
-    then
-        alias yaouins='yaourt -S'
-        alias yaourem='yaourt -R'
-        alias yaoupd='yaourt -Syu --aur'
-        alias getpkgbuild='yaourt -G'
-        alias pacsearch='yaourt -Ss'
-        alias pacinfo='yaourt -Si'
-    fi
 
     # Arch - Pacaur
     if [[ -x /usr/bin/pacaur ]]
@@ -154,10 +143,9 @@ alias sudo='sudo '
 alias vibashrc='vim ~/.bashrc'
 alias vivimrc='vim ~/.vimrc'
 alias loadrc='. ~/.bashrc'
-alias symlink='sudo ln -s'
+alias symlink='ln -s'
 alias wtfis='whatis '
 alias chkexit='echo $?'
-alias nowplaying='mpc current'
 alias follow='tail -f'
 
 

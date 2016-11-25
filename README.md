@@ -42,6 +42,8 @@ Core Packages
 * vim (text editor for men)
   * vundle (vim plugin manager)
 
+* weechat (irc client)
+
 * xorg-server, xrdb (X11 Server and X Resources Database)
 
 AUR Packages
