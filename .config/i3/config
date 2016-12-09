@@ -8,11 +8,11 @@
 set $mod Mod1
 set $wmod Mod4
 
-# custom colors
+# manually set colors
 #set $termbg #1c1c20
 #set $termfg #e0e0df
 
-# For use on i3-gaps devel version
+# set colors from xresources
 set_from_resource $termbg color0 #000000
 set_from_resource $termfg color15 #ffffff
 
@@ -26,8 +26,8 @@ exec --no-startup-id "i3-msg exec urxvt\; exec urxvt\; exec urxvt\; exec urxvt"
 #exec --no-startup-id firefox
 exec --no-startup-id "thunar --daemon"
 
-# custom key assignments
-bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
+# rofi/dmenu
+#bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
 bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run
 
 # mpc bindings (ncmpcpp control)
@@ -54,6 +54,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 # lock
 bindsym $wmod+l exec --no-startup-id i3lock-fancy -pt ''
+
+# tab through workspaces
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # vim-keybindings for movement
 # change focus
