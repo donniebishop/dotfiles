@@ -27,6 +27,10 @@ Plugin 'vim-airline/vim-airline-themes'
 " Fugitive
 Plugin 'tpope/vim-fugitive'
 
+" Mardown Previews
+" * Also run `sudo npm -g install instant-markdown-d`
+Plugin 'suan/vim-instant-markdown'
+
 " NERD Tree
 Plugin 'scrooloose/nerdcommenter'
 
@@ -72,8 +76,15 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline_theme='base16_monokai'
 
+"Markdown Settings
+"--------------------
+let g:instant_markdown_slow = 1
+let g:instant_markdown_autostart = 0
+
 "PyMode Settings
 "--------------------
+let g:pymode_folding = 0
+let g:pymode_lint_on_write = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
 

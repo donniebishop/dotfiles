@@ -98,7 +98,7 @@ then
     alias gpull='git pull '
     alias gpush='git push '
     alias gdiff='git diff'
-    alias gamend='git commit --amend'
+    alias gamend='git commit --amend --reuse-message=HEAD'
     alias gunstage='git reset HEAD '
     alias gresetchanges='git checkout --'
     alias gswitch='git checkout'
