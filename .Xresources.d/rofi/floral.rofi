@@ -1,0 +1,26 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme - Taiga
+! ------------------------------------------------------------------------------
+
+rofi.font: Tewi 9
+rofi.color-enabled: true
+rofi.fullscreen: true
+
+! -color-window background, border color, separator color
+!
+rofi.color-window: #e09d99, #e09d99, #e09d99
+
+
+! -color-normal background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-normal: #e09d99, #191b20, #e09d99, #e0bbb9, #191b20
+
+
+! -color-active background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-active: #e09d99, #191b20, #e09d99, #e0bbb9, #191b20
+
+
+! -color-urgent background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3

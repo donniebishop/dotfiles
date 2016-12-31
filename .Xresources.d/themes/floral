@@ -1,0 +1,25 @@
+! Floral
+!--------------
+*color0: #191b20
+*color1: #8e92a0
+*color2: #9c98a0
+*color3: #9999a0
+*color4: #a08e91
+*color5: #a09596
+*color6: #c76b68
+*color7: #999ba0
+*color8: #b58e8c
+*color9: #c6c4c8
+*color10: #e09d99
+*color11: #c8c1c3
+*color12: #cac9cd
+*color13: #e0bbb9
+*color14: #e0d8db
+*color15: #e0dadb
+
+#define termbg #191b20
+#define termfg #e0dadb
+
+! import rofi
+#include "../rofi/floral.rofi"
+
