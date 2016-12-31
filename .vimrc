@@ -97,6 +97,10 @@ let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
 
 runtime! archlinux.vim
 
+" Colorscheme
+
+colo peachpuff
+
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim74/vimrc_example.vim or the vim manual
 " and configure vim to your own liking!
@@ -166,7 +170,7 @@ set formatoptions=c,q,t " This is a sequence of letters which describes how
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
  
-set background=dark " When set to "dark", Vim will try to use colors that look
+"set background=dark" When set to "dark", Vim will try to use colors that look
                     " good on a dark background. When set to "light", Vim will
                     " try to use colors that look good on a light background.
                     " Any other value is illegal.
