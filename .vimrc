@@ -74,7 +74,7 @@ let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings"}
 "--------------------
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='base16_monokai'
+let g:airline_theme='ubaryd'
 
 "Markdown Settings
 "--------------------
@@ -83,6 +83,7 @@ let g:instant_markdown_autostart = 0
 
 "PyMode Settings
 "--------------------
+let g:pymode_rope = 0
 let g:pymode_folding = 0
 let g:pymode_lint_on_write = 0
 let g:pymode_options_colorcolumn = 0
@@ -96,10 +97,6 @@ let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
 " properly set to work with the Vim-related packages.
 
 runtime! archlinux.vim
-
-" Colorscheme
-
-colo peachpuff
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim74/vimrc_example.vim or the vim manual
@@ -183,6 +180,8 @@ set noshowmode      " Hide the default mode text
 set wrap            " These options soft wrap words when typing long lines at
 set linebreak       " the end of the screen. 
 set nolist
+
+colorscheme peachpuff
  
 filetype plugin indent on
 syntax on
