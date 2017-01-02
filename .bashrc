@@ -20,6 +20,7 @@ then
     #export VIMRUNTIME=/usr/bin/vim
     export EDITOR=/usr/bin/vim
     export VISUAL=$EDITOR
+    alias vim='vim -p'
     alias view='vim -R'
     alias vimtab='vim -p'
     alias viewtab='vim -Rp'
