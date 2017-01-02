@@ -1,0 +1,15 @@
+{
+  "hints.chars": "01234567 89",
+  "mode.normal.scroll_page_down": "<pagedown>",
+  "mode.normal.scroll_page_up": "<pageup>",
+  "mode.normal.scroll_half_page_down": "<space>",
+  "mode.normal.scroll_half_page_up": "<s-space>",
+  "mode.normal.tab_close": "d",
+  "mode.normal.tab_restore": "u",
+  "mode.normal.enter_mode_ignore": "<insert>",
+  "mode.normal.esc": "<force><escape>    <force><c-[>",
+  "mode.caret.exit": "<force><escape>    <force><c-[>",
+  "mode.hints.exit": "<force><escape>    <force><c-[>",
+  "mode.find.exit": "<force><escape>    <force><c-[>",
+  "mode.marks.exit": "<force><escape>    <force><c-[>"
+}
