@@ -30,12 +30,11 @@ whitelist ~/.config/gnome-mplayer
 whitelist ~/.cache/gnome-mplayer/plugin
 whitelist ~/.pki
 whitelist ~/.dotfiles
+whitelist ~/.Xresources.d/firefox/startpages
 whitelist ~/Docs
 whitelist ~/Downloads
-whitelist ~/Music
 whitelist ~/Pictures
 whitelist ~/projects
-whitelist ~/Videos
 
 # lastpass, keepassx
 whitelist ~/.keepassx
