@@ -26,7 +26,7 @@ urxvt.letterSpace: 1
 ! Use firefox for internets
 urxvt*perl-ext-common: default,matcher
 urxvt*url-launcher:    firefox
-urxvt*matcher.button:  1
+urxvt*matcher.button:  3
 
 urxvt*internalBorder: 20
 urxvt*cursorBlink: 1
