@@ -125,7 +125,7 @@ lyrics-autosave = no
 
 ## Custom progress bar. Must be 2 or 3 chars long exactly
 #progressbar_look = =>- 
-progressbar_look = ──
+progressbar_look = ─-
 
 ## Cyclic scrolling
 cyclic_scrolling = yes
@@ -141,7 +141,7 @@ lines_scrolled = 1
 ## color code. The special color, none, represents the terminals default color.
 
 ## Enable/disable colors.
-#enable-colors = no
+enable-colors = yes
 
 ## Set the background color.
 #color background = black
@@ -171,7 +171,7 @@ lines_scrolled = 1
 #color browser-playlist = red
 
 ## Set the color of the progress indicator.
-#color progressbar = white
+color progressbar = blue
 
 ## Set the text color used to display mpd status in the status window.
 #color status-state = yellow,bold
