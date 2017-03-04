@@ -24,7 +24,7 @@ urxvt.letterSpace: 1
 !urxvt.letterSpace: -1
 
 ! Use firefox for internets
-urxvt*perl-ext-common: default,matcher
+urxvt*perl-ext-common: default,matcher,selection-to-clipboard
 urxvt*url-launcher:    firefox
 urxvt*matcher.button:  3
 
@@ -44,8 +44,4 @@ urxvt*scrollBar: off
 !
 URxvt.keysym.C-M-c: builtin-string:
 URxvt.keysym.C-M-v: builtin-string:
-
-! Perl Extensions
-!
-URxvt.perl-ext-common: selection-to-clipboard
 
