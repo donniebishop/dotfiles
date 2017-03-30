@@ -24,6 +24,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Cargo crates
+Plugin 'nonius/cargo.vim'
+
 " Fugitive
 Plugin 'tpope/vim-fugitive'
 
@@ -49,6 +52,12 @@ Plugin 'scrooloose/syntastic'
 " SuperTab
 Plugin 'ervandew/supertab'
 
+" Surround
+Plugin 'tpope/vim-surround'
+
+" Toml syntax
+Plugin 'cespare/vim-toml'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,11 +71,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_highlighting = 0
+let g:syntastic_rust_rustc_exe = 'cargo check'
+let g:syntastic_rust_rustc_fname = ''
+let g:syntastic_rust_rustc_args = '--'
 let g:syntastic_rust_checkers = ['rustc']
 let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings"}
 
@@ -119,7 +131,7 @@ set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
 set showcmd         " Show (partial) command in status line.
 
 set number          " Show line numbers.
-set relativenumber  " Show numbers relative to the current line
+"set relativenumber " Show numbers relative to the current line
 
 set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " one. The jump is only done if the match can be seen on the
@@ -142,10 +154,10 @@ set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
                     " over something.
  
 "set autoindent     " Copy indent from current line when starting a new line
-                    " (typing <CR> in Insert mode or when using the "o" or "O"
+                    " (typing <CR> in Insert mode or when using the 'o' or 'O'
                     " command).
 
-set noautoindent    " Disable autoindent behaviour. No more pasting in code and
+"set noautoindent    " Disable autoindent behaviour. No more pasting in code and
                     " having it look like a goddamned staircase.
  
 "set textwidth=79   " Maximum width of text that is being inserted. A longer
@@ -158,7 +170,7 @@ set formatoptions=c,q,t " This is a sequence of letters which describes how
                     " ------    ---------------------------------------
                     " c         Auto-wrap comments using textwidth, inserting
                     "           the current comment leader automatically.
-                    " q         Allow formatting of comments with "gq".
+                    " q         Allow formatting of comments with 'gq'.
                     " r         Automatically insert the current comment leader
                     "           after hitting <Enter> in Insert mode. 
                     " t         Auto-wrap text using textwidth (does not apply
@@ -167,8 +179,8 @@ set formatoptions=c,q,t " This is a sequence of letters which describes how
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
  
-"set background=dark" When set to "dark", Vim will try to use colors that look
-                    " good on a dark background. When set to "light", Vim will
+"set background=dark" When set to 'dark', Vim will try to use colors that look
+                    " good on a dark background. When set to 'light', Vim will
                     " try to use colors that look good on a light background.
                     " Any other value is illegal.
  
