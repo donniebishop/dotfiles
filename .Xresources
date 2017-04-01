@@ -4,6 +4,7 @@
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
 #include ".Xresources.d/themes/floral"
+!#include ".Xresources.d/themes/grayscale"
 !#include ".Xresources.d/themes/kiss_shot"
 !#include ".Xresources.d/themes/senjou"
 !#include ".Xresources.d/themes/sky"
@@ -14,7 +15,7 @@
 ! Some font rendering fixings
 Xft.dpi:        96
 Xft.rgba:       rgb
-Xft.autohint:   0j
+Xft.autohint:   0
 Xft.antialias:  true
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
