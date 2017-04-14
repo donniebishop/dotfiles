@@ -125,7 +125,7 @@ lyrics-autosave = no
 
 ## Custom progress bar. Must be 2 or 3 chars long exactly
 #progressbar_look = =>- 
-progressbar_look = ─-
+progressbar_look = ─+─
 
 ## Cyclic scrolling
 cyclic_scrolling = yes

@@ -9,12 +9,12 @@ urxvt*foreground: termfg
 
 ! Tewi Font
 !
-urxvt*font: xft:Tewi:size=8
-urxvt.letterSpace: 1
+urxvt*font: xft:Tewi:size=9
+urxvt.letterSpace: 0
 
 ! Yuki Font
 !
-!urxvt*font: xft:yuki:size=8
+!urxvt*font: xft:yuki:size=10
 !urxvt.letterSpace: 1
 
 !Hack Font
