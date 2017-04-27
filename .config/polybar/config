@@ -379,7 +379,7 @@ margin-bottom = 5
 type = custom/script
 exec = /usr/local/bin/pac-updates.sh
 click-middle = /usr/local/bin/pac-updates.sh
-label =  %output%
+label = %output%
 interval = 30
 
 [module/weather]
