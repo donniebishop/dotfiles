@@ -400,7 +400,7 @@ interval = 1000
 
 [module/current-song]
 type = custom/script
-exec = mpc current
+exec = echo $(mpc current) | sed s/\;/,\ /g | sed s/\ -\ /\ ~\ /2 | sed s/~.*$//
 click-left = mpc prev
 click-middle = mpc toggle
 click-right = mpc next
