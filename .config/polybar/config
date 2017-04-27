@@ -401,6 +401,9 @@ interval = 1000
 [module/current-song]
 type = custom/script
 exec = mpc current
+click-left = mpc prev
+click-middle = mpc toggle
+click-right = mpc next
 label = %output%
 interval = 1
 

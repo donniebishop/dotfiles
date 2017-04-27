@@ -71,6 +71,6 @@ else
 	icon=${state_icons["generic"]}
 fi
 
-echo "$icon  $temp"
-echo "$icon  $temp"
+echo "$icon $temp"
+echo "$icon $temp"
 echo

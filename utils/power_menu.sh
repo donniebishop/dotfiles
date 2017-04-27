@@ -1,6 +1,6 @@
 #!/bin/bash
  
-res=$(echo "lock|logout|reboot|shutdown" | rofi -sep "|" -dmenu -i -p 'Power Menu: ' "" -width 9 -hide-scrollbar -eh 4 -location 3 -yoffset 18 -padding 12 -opacity 100 -font "Tewi 9" -auto-select -no-fullscreen) 
+res=$(echo "lock|logout|reboot|shutdown" | rofi -sep "|" -dmenu -i -p 'Power Menu: ' "" -width 9 -hide-scrollbar -eh 4 -location 3 -yoffset 20 -padding 12 -opacity 100 -font "Tewi 9" -auto-select -no-fullscreen) 
  
 if [ $res = "lock" ]; then
     /usr/bin/i3lock-fancy -pt ''
