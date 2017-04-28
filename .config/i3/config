@@ -16,6 +16,9 @@ set $wmod Mod4
 set_from_resource $termbg color0 #000000
 set_from_resource $termfg color15 #ffffff
 
+# polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
@@ -28,7 +31,7 @@ exec --no-startup-id "thunar --daemon"
 
 # rofi/dmenu
 #bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
-bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run
+bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run 
 
 # mpc bindings (ncmpcpp control)
 bindsym $wmod+Right exec --no-startup-id mpc next
@@ -44,6 +47,7 @@ bindsym $wmod+x exec --no-startup-id mpc stop
 bindsym XF86AudioNext exec --no-startup-id mpc next
 bindsym XF86AudioPrev exec --no-startup-id mpc prev
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym Shift+XF86AudioPlay exec --no-startup-id mpc stop
 bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
@@ -135,14 +139,16 @@ assign [class="Spotify"] $ws9
 assign [class="Vlc"] $ws0
 
 # floating windows
-for_window [class="feh"] floating enable
-for_window [class="Lxappearance"] floating enable
 for_window [class="Display"] floating enable
-for_window [class="Zenmap"] floating enable
+for_window [class="feh"] floating enable
 for_window [class="Leafpad"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Pavucontrol"] floating enable
 for_window [class="Thunar"] floating enable
-for_window [class="Yad"] floating enable
 for_window [class="Vlc"] floating enable
+for_window [class="Yad"] floating enable
+for_window [class="Xscreensaver-demo"] floating enable
+for_window [class="Zenmap"] floating enable
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -169,8 +175,6 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws0
 
 # borders
-# termfg border on focus; blend with termbg if not
-#
 # state                     border   bg       text    indicator
 client.focused              $termfg  $termfg  $white  $termfg
 client.unfocused            $termbg  $termbg  $alive  $termbg
@@ -182,24 +186,23 @@ client.urgent               $termfg  $termfg  $white  $termfg
 #  i3bar  #
 ###########
 
-bar {
-        #status_command i3status
-        status_command i3blocks
-        tray_output primary
-        position top
-        font pango: Awesome 9, Tewi 9
-        colors {
-                background  $termbg
-                statusline  $termfg
+#bar {
+        #status_command i3blocks
+        #tray_output none
+        #position top
+        #font pango:Tewi, Awesome 8
+        #colors {
+                #background  $termbg
+                #statusline  $termfg
 
-                #selection          #border #fill    #text
-                focused_workspace   $termfg $termfg  $termbg
-                active_workspace    $termbg $termbg  $termfg
-                inactive_workspace  $termbg $termbg  $termfg
-                urgent_workspace    $termfg $termfg  $termbg
-                binding_mode        $termfg $termbg  $termfg
-        }
-}
+                ##selection          #border #fill    #text
+                #focused_workspace   $termfg $termfg  $termbg
+                #active_workspace    $termbg $termbg  $termfg
+                #inactive_workspace  $termbg $termbg  $termfg
+                #urgent_workspace    $termfg $termfg  $termbg
+                #binding_mode        $termfg $termbg  $termfg
+        #}
+#}
 
 
 ####################

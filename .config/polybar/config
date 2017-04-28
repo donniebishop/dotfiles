@@ -22,21 +22,21 @@ alert = #bd2c40
 width = 100%
 height = 20
 ;offset-x = 1%
-;offset-y = 1%
+offset-y = 1%
 radius = 0.0
 fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 2
 line-color = #f00
 
 border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -49,7 +49,7 @@ font-4 = fontawesome:pixelsize=8;1
 
 modules-left = i3
 modules-center = current-song
-modules-right =  pac-updates volume filesystem wlan weather date power-menu
+modules-right =  pac-updates volume filesystem battery wlan weather date power-menu
 
 tray-position = right
 tray-padding = 2
@@ -211,11 +211,11 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-nderline = #9f78e1
+;format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
@@ -282,7 +282,7 @@ bar-volume-foreground-4 = ${colors.foreground}
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = ┥
+bar-volume-indicator = ┫
 bar-volume-indicator-font = 2
 bar-volume-fill = ━
 bar-volume-fill-font = 2
@@ -297,14 +297,14 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+;format-charging-underline = #ffb52a
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+;format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
