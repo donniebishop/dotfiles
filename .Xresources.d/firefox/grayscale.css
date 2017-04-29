@@ -107,6 +107,13 @@
     #urlbar { padding-left: calc((var(--url-height) * 2) + 8px) !important; }
     /**/
     
+
+    /* Disable Reader Mode Button */
+    #reader-mode-button,
+    #readinglist-addremove-button {
+	 display:none !important;
+    }
+    
     
     /* --- Comment out the section below to make the url-bar visible --- */
     /*

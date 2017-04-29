@@ -84,13 +84,13 @@ let g:syntastic_rust_rustc_exe = 'cargo check'
 let g:syntastic_rust_rustc_fname = ''
 let g:syntastic_rust_rustc_args = '--'
 let g:syntastic_rust_checkers = ['rustc']
-let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings"}
+let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings" }
 
 "Airline Settings
 "--------------------
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='ubaryd'
+let g:airline_theme='base16_grayscale'
 
 "Markdown Settings
 "--------------------
@@ -125,7 +125,7 @@ set wrap            " These options soft wrap words when typing long lines at
 set linebreak       " the end of the screen. 
 set nolist
 
-colorscheme peachpuff
+colorscheme pablo
  
 filetype plugin indent on
 syntax on
