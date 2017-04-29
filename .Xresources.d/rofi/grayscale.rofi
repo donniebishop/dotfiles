@@ -1,0 +1,26 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme - Grayscale
+! ------------------------------------------------------------------------------
+
+rofi.font: Tewi 9
+rofi.color-enabled: true
+rofi.fullscreen: true
+
+! -color-window background, border color, separator color
+!
+rofi.color-window: #a0a0a0, #a0a0a0, #a0a0a0
+
+
+! -color-normal background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-normal: #a0a0a0, #101010, #a0a0a0, #b9b9b9, #101010
+
+
+! -color-active background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-active: #a0a0a0, #101010, #a0a0a0, #b9b9b9, #101010
+
+
+! -color-urgent background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3

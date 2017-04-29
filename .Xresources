@@ -3,8 +3,8 @@
 ! Import theme colors + rofi
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
-#include ".Xresources.d/themes/floral"
-!#include ".Xresources.d/themes/grayscale"
+!#include ".Xresources.d/themes/floral"
+#include ".Xresources.d/themes/grayscale"
 !#include ".Xresources.d/themes/kiss_shot"
 !#include ".Xresources.d/themes/senjou"
 !#include ".Xresources.d/themes/sky"

@@ -11,8 +11,8 @@
 background = ${xrdb:color0:#222}
 background-alt = #444
 foreground = ${xrdb:color15:#222}
-foreground-alt =  ${xrdb:color1:#555}
-highlight = ${xrdb:color10}
+foreground-alt =  ${xrdb:color2:#555}
+highlight = ${xrdb:color7}
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -390,13 +390,10 @@ label = %output%
 interval = 1800
 
 [module/power-menu]
-type = custom/script
-exec = echo 
+type = custom/text
+content = 
 click-left = /usr/local/bin/power_menu.sh
-label = %output%
-format = <label>
-format-foreground = ${colors.highlight}
-interval = 1000
+content-foreground = ${colors.highlight}
 
 [module/current-song]
 type = custom/script

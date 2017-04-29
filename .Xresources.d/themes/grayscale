@@ -20,7 +20,6 @@
 #define termbg #101010
 #define termfg #f7f7f7
 
-! special
-*foreground: #b9b9b9
-*background: #101010
-*cursorColor: #b9b9b9
+! import rofi
+#include "../rofi/grayscale.rofi"
+

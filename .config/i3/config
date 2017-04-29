@@ -20,7 +20,8 @@ set_from_resource $termfg color15 #ffffff
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-tile ~/Pictures/wallpaper.jpg
 exec_always --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
 
 # load up default terminal config for ws1, and then fire off some default progs
@@ -374,4 +375,4 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you want to exit out of i3?' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -f 'pango: tewi 8' -t warning -m 'Do you want to exit out of i3?' -b 'Yes, exit i3' 'i3-msg exit'"

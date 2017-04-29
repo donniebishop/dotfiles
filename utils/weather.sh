@@ -15,7 +15,7 @@
 #
 ####################################################
 
-city="Ashburn"
+city="Washington_DC"
 
 declare -A state_icons=( \
 	["Cloudy"]="" \
