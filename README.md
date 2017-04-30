@@ -11,7 +11,7 @@ bar: [polybar](https://aur.archlinux.org/packages/polybar-git)
 
 terminal: rxvt-unicode 
 
-terminal font: [tewi](https://aur.achlinux.org/packages/bdf-tewi-git)
+terminal font: [tewi](https://aur.archlinux.org/packages/bdf-tewi-git)
 
 text editor: vim 
 
@@ -22,7 +22,7 @@ Featuring
 
 * arc-icon-theme (gtk icon theme)
 
-* [compton](https://aur.archlinux.org/packages/compton) (screen compositor)
+* compton (screen compositor)
 
 * [font-awesome](https://aur.archlinux.org/packages/ttf-font-awesome) (icon font)
 
@@ -39,7 +39,6 @@ Featuring
 * [rainbowstream](https://aur.archlinux.org/packages/rainbowstream) (twitter client)
 
 * ranger (cli file manager)
-  * w3m (for image previews)
 
 * [rofi](https://aur.archlinux.org/packages/rofi-git) (dmenu replacement)
 
