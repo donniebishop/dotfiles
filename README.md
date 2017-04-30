@@ -1,64 +1,54 @@
 dotfiles
 ========
-My customizations. Lots of stuff stolen from /r/unixporn.
-Packages with links are to the git repositories or AUR links.
-It's safe to assume that if it's not linked, it can be installed directly via pacman :)
+My customizations and configurations. Lots of stuff stolen from /r/unixporn. For any Arch users, all non-linked items are in the official repos, and linked packages are in the AUR <3
 
 Main Attractions
 ----------------
 
-WM: [i3-gaps](https://aur.archlinux.org/i3-gaps-next-git.git)
+wm: [i3-gaps](https://aur.archlinux.org/packages/i3-gaps-next-git)
 
-GTK Theme: [Arc Darker](https://aur.archlinux.org/gtk-theme-arc-git.git)
+bar: [polybar](https://aur.archlinux.org/packages/polybar-git)
 
-GTK Icon Theme: [Super Flat Remix](https://aur.archlinux.org/super-flat-remix-icon-theme.git)
+terminal: rxvt-unicode 
 
-Firefox Theme: [Arc Darker](https://addons.mozilla.org/En-us/firefox/addon/arc-darker-theme/)
+terminal font: [tewi](https://aur.achlinux.org/packages/bdf-tewi-git)
 
-Icon Font: [Font Awesome](https://aur.archlinux.org/ttf-font-awesome.git)
+text editor: vim 
 
-Terminal Font: [Tewi](https://aur.achlinux.org/bdf-tewi-git.git)
+gtk theme: [arc](https://aur.archlinux.org/packages/gtk-theme-arc-git)
 
-Terminal: rxvt-unicode 
+Featuring
+---------
 
-Core Packages
--------------
+* arc-icon-theme (gtk icon theme)
 
-* alsa-utils (ALSA Mixer and sound utilities)
+* [compton](https://aur.archlinux.org/packages/compton) (screen compositor)
+
+* [font-awesome](https://aur.archlinux.org/packages/ttf-font-awesome) (icon font)
 
 * lxappearance (GTK config manager)
 
-* ncmpcpp (MPD client and music player)
-  * mopidy (MPD replacement) 
-  * mpc (music controls)
+* mopidy (mpd server) 
 
-* ranger (ncurses file manager)
+* ncmpcpp (mpd client)
+
+* [pacaur](https://aur.archlinux.org/packages/pacaur) (AUR package helper)
+
+* pavucontrol (pulseaudio control)
+
+* [rainbowstream](https://aur.archlinux.org/packages/rainbowstream) (twitter client)
+
+* ranger (cli file manager)
   * w3m (for image previews)
 
-* thunar (file manager)
+* [rofi](https://aur.archlinux.org/packages/rofi-git) (dmenu replacement)
+
+* [smugfetch](https://aur.archlinux.org/packages/neofetch-git) (system stats)
+
+* thunar (gui file manager)
 
 * trash-cli (for all your waifus)
 
-* vim (text editor for men)
-  * vundle (vim plugin manager)
+* vundle (vim plugin manager)
 
 * weechat (irc client)
-
-* xorg-server, xrdb (X11 Server and X Resources Database)
-
-AUR Packages
-------------
-
-* [atom](https://aur.archlinux.org/atom-editor.git) (text editor)
-
-* [compton](https://aur.archlinux.org/compton.git) (screen compositor)
-
-* [i3blocks](https://aur.archlinux.org/i3blocks.git) (i3bar statusline)
-
-* [pacaur](https://aur.archlinux.org/pacaur.git) (AUR package helper)
-
-* [rainbowstream](https://aur.archlinux.org/rainbowstream.git) (Twitter in terminal)
-
-* [rofi](https://aur.archlinux.org/rofi-git.git) (application starter)
-
-* [smugfetch](https://aur.archlinux.org/neofetch-git.git) (system stats)

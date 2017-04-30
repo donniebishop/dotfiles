@@ -205,6 +205,9 @@
     }
     #TabsToolbar::after { display: none !important; }
     .tabbrowser-tab::before, .tabbrowser-tab::after { background: none !important; opacity: 1 !important; visibility: visible !important; }
+
+    /* Fix tab text alignment in Firefox 53 */
+    .tab-label { -moz-box-flex: 1 !important; text-align: var(--tab-text-align) !important; }
     
     /*browser, #navigator-toolbox { -moz-appearance: none !important; background: transparent !important; }*/
     
