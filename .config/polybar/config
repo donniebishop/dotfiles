@@ -49,7 +49,7 @@ font-4 = fontawesome:pixelsize=8;1
 
 modules-left = i3
 modules-center = current-song
-modules-right =  pac-updates volume filesystem battery wlan weather date power-menu
+modules-right =  vpn pac-updates volume filesystem battery wlan weather date power-menu
 
 tray-position = right
 tray-padding = 2
@@ -392,8 +392,15 @@ interval = 1800
 [module/power-menu]
 type = custom/text
 content = 
-click-left = /usr/local/bin/power_menu.sh
 content-foreground = ${colors.highlight}
+click-left = /usr/local/bin/power_menu.sh
+
+[module/vpn]
+type = custom/script
+exec = /usr/local/bin/vpn.sh
+click-middle = /usr/local/bin/vpn.sh
+label = 
+interval = 5
 
 [module/current-song]
 type = custom/script
