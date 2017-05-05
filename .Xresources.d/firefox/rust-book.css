@@ -1,0 +1,21 @@
+@-moz-document domain("rust-lang.github.io") {
+  body {
+    line-height: 1.6
+  }
+  
+  .hljs {
+    font-family: Hack;
+    font-size: 12px;
+  }
+}
+
+@-moz-document domain("doc.rust-lang.org") {
+  body {
+    line-height: 1.6
+  }
+  
+  .hljs {
+    font-family: Hack;
+    font-size: 12px;
+  }
+}

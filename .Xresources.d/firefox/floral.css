@@ -24,7 +24,7 @@
     --tab-height: 20px; --tab-icon-size: 10px; --tab-strip-margin: -10px; --tab-overlap: -6px;
     --tab-fonts: "Tewi",monospace,"Open Sans"; --tab-font-size: 8pt;
     --tab-text-align: center; /* left | center | right */
-    --tab-triangle: block;  /* block | none */
+    --tab-triangle: none;  /* block | none */
 
     /* URL VARIABLES */
     --url-background: var(--bg-light); --url-color: var(--fg-light);
