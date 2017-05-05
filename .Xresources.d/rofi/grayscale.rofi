@@ -8,17 +8,17 @@ rofi.fullscreen: true
 
 ! -color-window background, border color, separator color
 !
-rofi.color-window: #a0a0a0, #a0a0a0, #a0a0a0
+rofi.color-window: #b9b9b9, #b9b9b9, #b9b9b9 
 
 
 ! -color-normal background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-normal: #a0a0a0, #101010, #a0a0a0, #b9b9b9, #101010
+rofi.color-normal: #b9b9b9, #101010, #b9b9b9, #b9b9b9, #f7f7f7
 
 
 ! -color-active background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-active: #a0a0a0, #101010, #a0a0a0, #b9b9b9, #101010
+rofi.color-active: #b9b9b9, #101010, #b9b9b9, #b9b9b9, #f7f7f7
 
 
 ! -color-urgent background, foreground, background alt, highlight background, highlight foreground

@@ -45,6 +45,9 @@ Plugin 'scrooloose/nerdtree'
 " Python Mode
 Plugin 'klen/python-mode'
 
+" Racer
+Plugin 'racer-rust/vim-racer'
+
 " Rust syntax
 Plugin 'rust-lang/rust.vim'
 
@@ -110,6 +113,12 @@ let g:pymode_folding = 0
 let g:pymode_lint_on_write = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
+
+"Racer Settings
+"--------------------
+set hidden
+let g:racer_cmd = "/usr/local/bin/racer"
+"let g:racer_experimental_completer = 1
 
 "Custom Settings
 "--------------------
