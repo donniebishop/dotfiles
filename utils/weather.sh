@@ -18,6 +18,7 @@
 city="Washington_DC"
 
 declare -A state_icons=( \
+	["Clear"]=""
 	["Cloudy"]="" \
 	["Fog"]="" \
 	["Heavy_Rain"]="" \
@@ -30,12 +31,12 @@ declare -A state_icons=( \
 	["Light_Sleet_Showers"]="" \
 	["Light_Snow"]="" \
 	["Light_Snow_Showers"]="" \
-	["Partly_Cloudy"]="/" \
-    ["Rain"]="" \
+	["Partly_Cloudy"]="" \
+  ["Rain"]="" \
 	["Sunny"]="" \
 	["Thundery_Heavy_Rain"]="/" \
 	["Thundery_Showers"]=""  \
-	["Thundery_Snow_Showers"]="/" \
+	["Thundery_Snow_Showers"]="" \
 	["Very_Cloudy"]="" \
 	["generic"]="" \
 )
@@ -54,11 +55,11 @@ getCurrWeather() {
 	echo "${state} ${temperature}"
 }
 
-yad="yad --borders 0 --text-info --no-buttons --on-top --center --skip-taskbar --width 882 --height 622 --fontname Tewi 8 --back #1c1c20 --fore #e0e0df"
-case $BLOCK_BUTTON in
-    1) curl --silent "wttr.in/${city}" | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | $yad;;     # left click
-    2) pkill -RTMIN+2 i3blocks;;    # middle click
-esac
+# yad="yad --borders 0 --text-info --no-buttons --on-top --center --skip-taskbar --width 882 --height 622 --fontname Tewi 8 --back #1c1c20 --fore #e0e0df"
+# case $BLOCK_BUTTON in
+#     1) curl --silent "wttr.in/${city}" | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | $yad;;     # left click
+#     2) pkill -RTMIN+2 i3blocks;;    # middle click
+# esac
 
 w=$(getCurrWeather)
 

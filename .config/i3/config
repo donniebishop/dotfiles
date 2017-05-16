@@ -33,6 +33,7 @@ exec --no-startup-id "thunar --daemon"
 # rofi/dmenu
 #bindsym $mod+d exec --no-startup-id rofi -opacity 100 -show run
 bindsym $mod+m exec --no-startup-id rofi -opacity 100 -show run 
+bindsym $mod+s exec --no-startup-id rofi -opacity 100 -show ssh 
 
 # mpc bindings (ncmpcpp control)
 bindsym $wmod+Right exec --no-startup-id mpc next
@@ -146,6 +147,7 @@ for_window [class="Leafpad"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Thunar"] floating enable
+for_window [class="Transmission-gtk"] floating enable
 for_window [class="Vlc"] floating enable
 for_window [class="Yad"] floating enable
 for_window [class="Xscreensaver-demo"] floating enable
