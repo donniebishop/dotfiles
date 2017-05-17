@@ -30,16 +30,16 @@ fi
 # ls aliases
 alias ls='ls --color=auto'
 alias lsa='ls -A --color=auto'
-alias lsl='ls -lh --color=auto'
-alias lsla='ls -Alh --color=auto'
+alias lsl='ls -oh --color=auto'
+alias lsla='ls -Aoh --color=auto'
 alias lso='ls -A | grep --color=auto'
 alias lsr='ls -R'
-alias lslr='ls -lR'
+alias lslr='ls -oR'
 alias lsd='ls -d */'
-alias lsld='ls -dl */'
-alias lslo='ls -Alh | grep --color=auto'
+alias lsld='ls -do */'
+alias lslo='ls -Aoh | grep --color=auto'
 alias lsonly='ls -A | grep --color=auto'
-alias lslonly='ls -Alh | grep --color=auto'
+alias lslonly='ls -Aoh | grep --color=auto'
 
 
 # systemd things
