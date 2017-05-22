@@ -17,11 +17,10 @@ urxvt.letterSpace: 0
 !urxvt*font: xft:yuki:size=10
 !urxvt.letterSpace: 1
 
-!Hack Font
+! Source Code Pro
 !
-!urxvt*font: xft:Hack:size=8
-!urxvt*font: --Hack-----------iso8859-
-!urxvt.letterSpace: -1
+!urxvt*font: xft:Source Code Pro:size=8
+!urxvt.letterSpace: -2
 
 ! Use firefox for internets
 urxvt*perl-ext-common: default,matcher,selection-to-clipboard
@@ -30,11 +29,6 @@ urxvt*matcher.button:  3
 
 urxvt*internalBorder: 20
 urxvt*cursorBlink: 1
-
-! Transparency
-!
-!urxvt*transparent: false
-!urxvt*shading: 14
 
 ! Scrollbar
 !
