@@ -41,7 +41,13 @@ fi
 #/usr/bin/thunar --daemon
 #sudo /usr/bin/systemctl restart mopidy.service
 #pulseaudio --start
-VBoxClient-all
+
+# save my eyes
+#xflux -z 20148 -k 3000
+pgrep redshift &> /dev/null || redshift &> /dev/null &
+
+# numlock yes
+numlockx &
 
 # startup i3
 exec i3
