@@ -32,11 +32,15 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #f00
 
+;border-bottom = 0
+;border-top = 15
+;border-right = 25
+;border-left = 25
 border-size = 0
 border-color = #00000000
 
 padding-left = 0
-padding-right = 1
+padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 1
@@ -404,7 +408,7 @@ interval = 5
 
 [module/current-song]
 type = custom/script
-exec = echo $(mpc current) | sed s/\;/,\ /g | sed s/\ -\ /\ ~\ /2 | sed s/~.*$//
+exec = echo $(mpc current) | sed s/\;/,\ /g | cut -d - -f 1,2
 click-left = mpc prev
 click-middle = mpc toggle
 click-right = mpc next
