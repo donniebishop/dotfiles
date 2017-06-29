@@ -15,7 +15,7 @@
 #
 ####################################################
 
-city="Washington_DC"
+city="ashburn"
 
 declare -A state_icons=( \
 	["Clear"]=""
