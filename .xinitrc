@@ -23,8 +23,6 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-# start some nice programs
-
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
   [ -x "$f" ] && . "$f"
@@ -32,23 +30,21 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+[ -f ~/.xprofile ] && . ~/.xprofile
+
 # twm &
 # xclock -geometry 50x50-1+1 &
 # xterm -geometry 80x50+494+51 &
 # xterm -geometry 80x20+494-0 &
 # exec xterm -geometry 80x66+0+0 -name login
 
-#/usr/bin/thunar --daemon
-#sudo /usr/bin/systemctl restart mopidy.service
-#pulseaudio --start
+pulseaudio --start
 
-# save my eyes
-#xflux -z 20148 -k 3000
-pgrep redshift &> /dev/null || redshift &> /dev/null &
-
-# numlock yes
-numlockx &
+# start some nice stuff
+/usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
+/usr/bin/thunar --daemon
+/usr/bin/numlockx on
+/usr/bin/redshift
 
 # startup i3
 exec i3
-
