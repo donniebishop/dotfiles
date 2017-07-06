@@ -53,7 +53,7 @@ font-4 = fontawesome:pixelsize=8;1
 
 modules-left = i3
 modules-center = current-song
-modules-right =  vpn pac-updates volume filesystem battery wlan weather date power-menu
+modules-right = vpn pac-updates japinput volume filesystem battery wlan weather date power-menu
 
 tray-position = right
 tray-padding = 2
@@ -405,6 +405,12 @@ exec = /usr/local/bin/vpn.sh
 click-middle = /usr/local/bin/vpn.sh
 label = 
 interval = 5
+
+[module/japinput]
+type = custom/script
+exec = /usr/local/bin/japinput.sh
+label = %output%
+interval = 1
 
 [module/current-song]
 type = custom/script
