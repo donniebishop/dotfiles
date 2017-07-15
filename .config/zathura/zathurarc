@@ -1,0 +1,19 @@
+###########
+# zathurarc
+###########
+
+# Colors
+#----------
+set defaultbar-bg "#101010"
+set defaultbar-bg "#f7f7f7"
+set statusbar-bg "#101010"
+set statusbar-fg "#f7f7f7"
+set inputbar-bg "#101010"
+set inputbar-fg "#f7f7f7"
+set completion-highlight-bg "#101010"
+set completion-highlight-fg "#f7f7f7"
+
+# GUI Options
+#---------------
+set font "tewi 8"
+set guioptions "s"
