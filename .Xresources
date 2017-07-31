@@ -1,6 +1,7 @@
 ! Commented lines start with '!'
 
 ! Import theme colors + rofi
+!#include ".Xresources.d/themes/bridge"
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
 !#include ".Xresources.d/themes/floral"
@@ -18,7 +19,8 @@ Xft.rgba:       rgb
 Xft.autohint:   0
 Xft.antialias:  true
 Xft.hinting:    true
-Xft.hintstyle:  hintslight
+Xft.hintstyle:  hintnone
+Xft.lcdfilter:  lcddefault
 
 ! Rofi defaults
 rofi.eh: 3
