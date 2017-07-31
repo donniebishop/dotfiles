@@ -1,5 +1,5 @@
 !-------------------------------------------------------------------------------
-! ROFI Color theme - Floral
+! ROFI Color theme - Bridge
 !-------------------------------------------------------------------------------
 
 rofi.font: Tewi 9
@@ -8,17 +8,17 @@ rofi.fullscreen: true
 
 ! -color-window background, border color, separator color
 !
-rofi.color-window: #e09d99, #e09d99, #e09d99
+rofi.color-window: #2b4758, #2b4758, #2b4758
 
 
 ! -color-normal background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-normal: #e09d99, #191b20, #e09d99, #e0bbb9, #191b20
+rofi.color-normal: #2b4758, #e1d8cb, #2b4758, #48627a, #e1d8cb
 
 
 ! -color-active background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-active: #e09d99, #191b20, #e09d99, #e0bbb9, #191b20
+rofi.color-active: #2b4758, #e1d8cb, #2b4758, #48627a, #e1d8cb
 
 
 ! -color-urgent background, foreground, background alt, highlight background, highlight foreground

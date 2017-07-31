@@ -1,21 +1,25 @@
 ! Bridge
 !--------------
-*.color0: #101010
-*.color1: #2b4758
-*.color2: #48627a
-*.color3: #618494
-*.color4: #79b2bd
-*.color5: #a4c5c5
-*.color6: #c6d5ce
-*.color7: #e1d8cb
-*.color8: #2b4758
-*.color9: #2b4758
-*.color10: #48627a
-*.color11: #618494
-*.color12: #79b2bd
-*.color13: #a4c5c5
-*.color14: #c6d5ce
-*.color15: #e1d8cb
+*color0: #101010
+*color1: #2b4758
+*color2: #48627a
+*color3: #618494
+*color4: #79b2bd
+*color5: #a4c5c5
+*color6: #c6d5ce
+*color7: #e1d8cb
+*color8: #2b4758
+*color9: #2b4758
+*color10: #48627a
+*color11: #618494
+*color12: #79b2bd
+*color13: #a4c5c5
+*color14: #c6d5ce
+*color15: #e1d8cb
 
 #define termbg #101010
 #define termfg #e1d8cb
+
+! import rofi
+#include "../rofi/bridge.rofi"
+

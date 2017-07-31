@@ -26,8 +26,8 @@ exec --no-startup-id redshift
 exec_always --no-startup-id pkill redshift && redshift
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
-exec_always --no-startup-id feh --bg-tile ~/Pictures/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+#exec_always --no-startup-id feh --bg-tile ~/Pictures/wallpaper.jpg
 
 # compositor
 exec --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
