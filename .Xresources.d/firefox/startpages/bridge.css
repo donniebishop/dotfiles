@@ -1,0 +1,41 @@
+#container{
+    position:           relative;
+    width:              720px;
+    height:             480px; 
+    margin:             auto; 
+    font-family:        'Tewi', 'Noto Sans', sans-serif;
+    font-size:          13px;
+    top: 100px;
+}
+
+.links{
+    display:            inline;
+    float:              left;
+    width:              220px;
+    padding:            10px;
+}
+
+body{
+    background-color:   #2b4758;
+}
+
+h3{
+    color:              #e1d8cb;
+}
+
+hr{
+    color:              #e1d8cb;
+}
+
+a{
+    color:              #e1d8cb;
+    text-decoration:    none;
+    display:            block;
+}
+
+/*input{*/
+    /*width:              100%;*/
+    /*box-sizing:         border-box;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing:    border-box;*/
+}
