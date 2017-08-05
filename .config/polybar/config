@@ -50,13 +50,14 @@ font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-3 = siji:pixelsize=10;1
 font-4 = fontawesome:pixelsize=8;1
+font-5 = "Misc Fixed Wide:style=ja:pixelsize=8;3"
 
 modules-left = i3
 modules-center = current-song
 modules-right = vpn pac-updates japinput volume filesystem battery wlan weather date power-menu
 
-tray-position = right
-tray-padding = 2
+tray-position = 
+tray-padding = 0
 ;tray-transparent = true
 ;tray-background = #0063ff
 
