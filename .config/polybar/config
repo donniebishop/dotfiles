@@ -56,8 +56,8 @@ modules-left = i3
 modules-center = current-song
 modules-right = vpn pac-updates japinput volume filesystem battery wlan weather date power-menu
 
-tray-position = 
-tray-padding = 0
+tray-position = right
+tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -384,7 +384,7 @@ margin-bottom = 5
 type = custom/script
 exec = /usr/local/bin/pac-updates.sh
 click-middle = /usr/local/bin/pac-updates.sh
-label = %output%
+label = %output%
 interval = 30
 
 [module/weather]
