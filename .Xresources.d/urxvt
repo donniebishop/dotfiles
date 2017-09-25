@@ -13,7 +13,7 @@ urxvt*foreground: termfg
 !
 urxvt.letterSpace: 0
 urxvt*font: xft:Tewi:size=8, \
-	    xft:Misc Fixed Wide:style=ja:size=8
+	    xft:Kochi Gothic:style=ja:size=8
 
 ! Yuki Font
 !
