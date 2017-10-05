@@ -157,6 +157,7 @@ for_window [class="feh"] floating enable
 for_window [class="Leafpad"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Peek"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Transmission-gtk"] floating enable
 for_window [class="Yad"] floating enable
