@@ -1,6 +1,6 @@
 ! urxvt config
 
-urxvt*internalBorder: 20
+urxvt*internalBorder: 30
 urxvt*cursorBlink: 1
 urxvt*scrollBar: off
 
@@ -12,12 +12,14 @@ urxvt*foreground: termfg
 ! Tewi Font
 !
 urxvt.letterSpace: 0
+urxvt.lineSpace: 2
 urxvt*font: xft:Tewi:size=8, \
 	    xft:Kochi Gothic:style=ja:size=8
 
 ! Yuki Font
 !
-!urxvt.letterSpace: 1
+!urxvt.letterSpace: 0
+!urxvt.lineSpace: 2
 !urxvt*font: xft:yuki:size=10
 
 !Hack Font
