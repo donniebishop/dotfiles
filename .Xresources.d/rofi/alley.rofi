@@ -1,0 +1,27 @@
+!-------------------------------------------------------------------------------
+! ROFI Color theme - Alley
+!-------------------------------------------------------------------------------
+
+rofi.font: Tewi 9
+rofi.color-enabled: true
+rofi.fullscreen: true
+
+! -color-window background, border color, separator color
+!
+rofi.color-window: #363b36, #363b36, #363b36
+
+
+! -color-normal background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-normal: #363b36, #e1d8cb, #363b36, #87907e, #151615
+
+
+! -color-active background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-normal: #363b36, #e1d8cb, #363b36, #87907e, #151615
+
+
+! -color-urgent background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+

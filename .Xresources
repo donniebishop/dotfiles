@@ -1,7 +1,8 @@
 ! Commented lines start with '!'
 
 ! Import theme colors + rofi
-#include ".Xresources.d/themes/bridge"
+#include ".Xresources.d/themes/alley"
+!#include ".Xresources.d/themes/bridge"
 !#include ".Xresources.d/themes/cmyk"
 !#include ".Xresources.d/themes/donut"
 !#include ".Xresources.d/themes/floral"

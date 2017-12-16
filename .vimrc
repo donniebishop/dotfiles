@@ -93,7 +93,7 @@ let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings" }
 "--------------------
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
-let g:airline_theme='base16_grayscale'
+let g:airline_theme='term'
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -141,7 +141,7 @@ set wrap            " These options soft wrap words when typing long lines at
 set linebreak       " the end of the screen. 
 set nolist
 
-colorscheme pablo
+colorscheme peachpuff
  
 filetype plugin indent on
 syntax on

@@ -1,0 +1,25 @@
+! Alley
+!--------------
+*color0: #151615
+*color1: #87907e
+*color2: #95a08b
+*color3: #a0a081
+*color4: #c8b296
+*color5: #c8b9a0
+*color6: #d8cdb9
+*color7: #e0dbcf
+*color8: #363b36
+*color9: #87907e
+*color10: #95a08b
+*color11: #a0a081
+*color12: #c8b296
+*color13: #c8b9a0
+*color14: #d8cdb9
+*color15: #e0dbcf
+
+#define termbg #151615
+#define termfg #e0dbcf
+
+! import rofi
+#include "../rofi/alley.rofi"
+

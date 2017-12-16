@@ -227,8 +227,8 @@ client.urgent               $termfg  $termfg  $white  $termfg
 for_window [class="^.*"] border pixel 5
 
 # # Set inner/outer gaps
-gaps inner 15
-gaps outer 10
+gaps inner 20
+gaps outer 15
 
 # Additionally, you can issue commands with the following syntax. This is
 # useful to bind keys to changing the gap size.

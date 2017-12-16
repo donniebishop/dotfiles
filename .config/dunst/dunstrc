@@ -64,7 +64,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-10+25"
+    geometry = "350x5-10+25"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -149,7 +149,7 @@
 
 [frame]
     width = 4
-    color = "#f7f7f7"
+    color = "#e0dbcf"
 
 [shortcuts]
 
@@ -175,18 +175,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#101010"
-    foreground = "#888888"
+    background = "#151615"
+    foreground = "#e0dbcf"
     timeout = 15
 
 [urgency_normal]
-    background = "#101010"
-    foreground = "#ffffff"
+    background = "#151615"
+    foreground = "#e0dbcf"
     timeout = 15
 
 [urgency_critical]
-    background = "#101010"
-    foreground = "#ffffff"
+    background = "#151615"
+    foreground = "#e0dbcf"
     timeout = 0
 
 
@@ -208,6 +208,10 @@
 # to "".
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
+
+[snapchat]
+    summary = "*Snapchat"
+    format = "<b>Snapchat</b>\n%b"
 
 #[espeak]
 #    summary = "*"

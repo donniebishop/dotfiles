@@ -11,8 +11,8 @@
 background = ${xrdb:color0:#222}
 background-alt = #444
 foreground = ${xrdb:color15:#222}
-foreground-alt =  ${xrdb:color2:#555}
-highlight = ${xrdb:color2}
+foreground-alt =  ${xrdb:color1:#555}
+highlight = ${xrdb:color1}
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -136,7 +136,7 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-foreground = ${colors.foreground}
+label-focused-foreground = ${colors.background}
 label-focused-background = ${colors.highlight}
 ;label-focused-underline = ${module/bspwm.label-focused-underline}
 label-focused-padding = ${self.label-mode-padding}
