@@ -18,7 +18,7 @@ rofi.color-normal: #363b36, #e1d8cb, #363b36, #87907e, #151615
 
 ! -color-active background, foreground, background alt, highlight background, highlight foreground
 !
-rofi.color-normal: #363b36, #e1d8cb, #363b36, #87907e, #151615
+rofi.color-active: #363b36, #e1d8cb, #363b36, #87907e, #151615
 
 
 ! -color-urgent background, foreground, background alt, highlight background, highlight foreground
