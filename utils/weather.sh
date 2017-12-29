@@ -32,7 +32,7 @@ declare -A state_icons=( \
 	["Light_Snow"]="" \
 	["Light_Snow_Showers"]="" \
 	["Partly_Cloudy"]="" \
-  ["Rain"]="" \
+	["Rain"]="" \
 	["Sunny"]="" \
 	["Thundery_Heavy_Rain"]="/" \
 	["Thundery_Showers"]=""  \
@@ -72,6 +72,6 @@ else
 	icon=${state_icons["generic"]}
 fi
 
-echo "$icon $temp"
-echo "$icon $temp"
+# echo "$icon $temp"
+echo "$temp"
 echo

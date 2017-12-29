@@ -50,7 +50,7 @@ font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-3 = siji:pixelsize=10;1
 font-4 = fontawesome:pixelsize=8;1
-font-5 = "Kochi Gothic:style=Regular:pixelsize=9"
+font-5 = "Kochi Gothic:style=Regular:pixelsize=9;2"
 
 modules-left = i3
 modules-center = current-song
@@ -98,7 +98,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted =  %percentage_used%%
+label-mounted =  %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -256,7 +256,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = "%D"
+date = "%m/%d"
 
 time = %I:%M
 time-alt = %H:%M:%S
@@ -270,13 +270,14 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = 
+;format-volume = <label-volume> <bar-volume>
+format-volume = <bar-volume>
+label-volume = 
 label-volume-foreground = ${colors.foreground}
 
-format-muted-prefix = ""
+format-muted-prefix = 
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = " MUTE" 
+label-muted = "" 
 
 bar-volume-width = 10
 bar-volume-foreground-0 = ${colors.foreground}
@@ -307,18 +308,18 @@ format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
@@ -384,7 +385,7 @@ margin-bottom = 5
 type = custom/script
 exec = /usr/local/bin/pac-updates.sh
 click-middle = /usr/local/bin/pac-updates.sh
-label = %output%
+label = %output%
 interval = 30
 
 [module/weather]
@@ -396,7 +397,7 @@ interval = 1800
 
 [module/power-menu]
 type = custom/text
-content = 
+content = ""
 content-foreground = ${colors.highlight}
 click-left = /usr/local/bin/power_menu.sh
 
