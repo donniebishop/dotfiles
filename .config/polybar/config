@@ -20,7 +20,7 @@ alert = #bd2c40
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 20
+height = 26
 ;offset-x = 1%
 offset-y = 1%
 radius = 0.0
@@ -50,7 +50,7 @@ font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-3 = siji:pixelsize=10;1
 font-4 = fontawesome:pixelsize=8;1
-font-5 = "Kochi Gothic:style=Regular:pixelsize=9;2"
+font-5 = "Kochi Gothic:style=Regular:pixelsize=9;0"
 
 modules-left = i3
 modules-center = current-song
@@ -130,7 +130,7 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 1
+label-mode-padding = 2
 label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background}
 
@@ -416,7 +416,7 @@ interval = 1
 
 [module/current-song]
 type = custom/script
-exec = echo $(mpc current) | sed s/\;/,\ /g | cut -d - -f 1,2
+exec = echo `mpc current` | sed s/\;/,\ /g | cut -c -75
 click-left = mpc prev
 click-middle = mpc toggle
 click-right = mpc next
