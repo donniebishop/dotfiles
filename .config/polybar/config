@@ -50,7 +50,7 @@ font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-3 = siji:pixelsize=10;1
 font-4 = fontawesome:pixelsize=8;1
-font-5 = "Kochi Gothic:style=Regular:pixelsize=9;0"
+font-5 = "Kochi Gothic:style=Regular:pixelsize=9;1"
 
 modules-left = i3
 modules-center = current-song
@@ -390,10 +390,10 @@ interval = 30
 
 [module/weather]
 type = custom/script
-exec = /usr/local/bin/weather.sh
-click-middle = /usr/local/bin/weather.sh
+exec = /usr/local/bin/weather.py
+click-middle = /usr/local/bin/weather.py
 label = %output%
-interval = 1800
+interval = 300
 
 [module/power-menu]
 type = custom/text
