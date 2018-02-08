@@ -268,7 +268,7 @@ format-prefix-foreground = ${colors.foreground}
 label = %date% %time%
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 ;format-volume = <label-volume> <bar-volume>
 format-volume = <bar-volume>
