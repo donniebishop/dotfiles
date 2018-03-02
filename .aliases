@@ -1,0 +1,82 @@
+# ls
+alias ls='ls --color=auto'
+alias lsa='ls -A --color=auto'
+alias lsl='ls -oh --color=auto'
+alias lsla='ls -Aoh --color=auto'
+alias lso='ls -A | grep --color=auto'
+alias lsr='ls -R'
+alias lslr='ls -oR'
+alias lsd='ls -d */'
+alias lsld='ls -do */'
+alias lslo='ls -Aoh | grep --color=auto'
+alias lsonly='ls -A | grep --color=auto'
+alias lslonly='ls -Aoh | grep --color=auto'
+
+# exa
+if [[ -x /usr/bin/exa ]]; then
+    alias ls='exa'
+    alias lsa='exa -a'
+    alias lso='exa -a | grep'
+    alias lslo='exa -la | grep'
+    alias lsl='exa -l'
+    alias lsla='exa -la'
+    alias lstree='exa -T'
+    alias lsonly='exa -a | grep'
+    alias lslonly='exa -la | grep'
+fi
+
+# vim
+alias vim='vim -p'
+alias view='vim -R'
+alias vimtab='vim -p'
+alias viewtab='vim -Rp'
+
+# Pacman
+#alias supacins='sudo pacman -S'
+#alias supacrem='sudo pacman -R'
+#alias supacfullrem='sudo pacman -Rc'
+#alias supacupd='sudo pacman -Syu'
+#alias supacclean='sudo paccache -r'
+#alias pacsearch='pacman -Ss '
+#alias pacinfo='pacman -Si'
+#alias makesrcinfo='makepkg --printsrcinfo'
+
+# Pacaur
+#alias supacins='pacaur -S'
+#alias supacrem='pacaur -R'
+#alias supacfullrem='pacaur -Rc'
+#alias supacupd='pacaur -Syu'
+#alias pacsearch='pacaur -Ss'
+#alias pacinfo='pacaur -Si'
+#alias getpkgbuild='pacaur -d'
+#alias getpkgmakepkg='pacaur -m'
+
+# Git
+#alias gstat='git status '
+#alias gadd='git add '
+#alias gcommit='git commit '
+#alias gclone='git clone '
+#alias glog='git log -3'
+#alias gpull='git pull '
+#alias gpush='git push '
+#alias gdiff='git diff'
+#alias gamend='git commit --amend --reuse-message=HEAD'
+#alias gunstage='git reset HEAD '
+#alias gresetchanges='git checkout --'
+#alias gswitch='git checkout'
+
+# unixporn
+alias i3config='vim ~/.config/i3/config'
+alias viblocks='vim ~/.i3blocks.conf'
+alias vixres='vim ~/.Xresources'
+alias xrdbreload='xrdb ~/.Xresources'
+alias fetch='neofetch --crop_mode fit'
+alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
+alias feh='feh --geometry 900x600'
+alias ncmpcpp='ncmpcpp; clear'
+
+# zsh
+alias vizrc='vim ~/.zshrc'
+alias loadzrc='source ~/.zshrc'
+
+# vim: sw=4

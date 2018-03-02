@@ -17,6 +17,7 @@ plugins=(
     cargo
     git
     nmap
+    sudo
     systemd
     web-search
 )
