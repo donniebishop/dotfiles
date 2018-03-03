@@ -1,14 +1,11 @@
-"My Vim Config <3
+" vim configuration
 "====================
 
-"Vundle Stuffs
-"--------------------
-
+"Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -19,9 +16,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 
-"Plugins
+" Plugins
 "--------------------
-
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -36,7 +32,7 @@ Plugin 'tpope/vim-fugitive'
 " * Also run `sudo npm -g install instant-markdown-d`
 Plugin 'suan/vim-instant-markdown'
 
-" NERD Tree
+" NERD Commenter
 Plugin 'scrooloose/nerdcommenter'
 
 " NERD Tree
@@ -48,7 +44,7 @@ Plugin 'klen/python-mode'
 " Racer
 Plugin 'racer-rust/vim-racer'
 
-" Rust syntax
+" Rust
 Plugin 'rust-lang/rust.vim'
 
 " Sensible
@@ -63,7 +59,7 @@ Plugin 'tpope/vim-surround'
 " Syntastic
 Plugin 'scrooloose/syntastic'
 
-" Toml syntax
+" TOML
 Plugin 'cespare/vim-toml'
 
 " All of your Plugins must be added before the following line
@@ -72,7 +68,7 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
-"Syntastic Settings
+" Syntastic Settings
 "--------------------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -89,7 +85,7 @@ let g:syntastic_rust_rustc_args = '--'
 let g:syntastic_rust_checkers = ['rustc']
 let g:syntastic_rust_rustc_quiet_messages = { "level": "warnings" }
 
-"Airline Settings
+" Airline Settings
 "--------------------
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
@@ -101,12 +97,12 @@ let g:airline_right_alt_sep = ''
 "let g:airline_symbols.linenr = ''
 "let g:airline_symbols.maxlinenr = ''
 
-"Markdown Settings
+" Markdown Settings
 "--------------------
 let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
 
-"PyMode Settings
+" PyMode Settings
 "--------------------
 let g:pymode_rope = 0
 let g:pymode_folding = 0
@@ -114,13 +110,13 @@ let g:pymode_lint_on_write = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_lint_checkers = ['pyflakes', 'pylint', 'mccabe']
 
-"Racer Settings
+" Racer Settings
 "--------------------
 set hidden
-let g:racer_cmd = "/usr/local/bin/racer"
+let g:racer_cmd = "/usr/bin/racer"
 "let g:racer_experimental_completer = 1
 
-"Custom Settings
+" Custom Settings
 "--------------------
 
 " This line should not be removed as it ensures that various options are
