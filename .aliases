@@ -1,3 +1,19 @@
+#
+# Aliases file for portable sourcing
+#
+
+# zsh
+if [[ $SHELL = /bin/zsh ]]; then
+    alias vizrc='vim ~/.zshrc'
+    alias loadzrc='source ~/.zshrc'
+fi
+
+# bash
+if [[ $SHELL = /bin/bash ]]; then
+    alias vibashrc='vim ~/.bashrc'
+    alias loadzrc='source ~/.bashrc'
+fi
+
 # ls
 alias ls='ls --color=auto'
 alias lsa='ls -A --color=auto'
@@ -26,32 +42,40 @@ if [[ -x /usr/bin/exa ]]; then
 fi
 
 # vim
-alias vim='vim -p'
-alias view='vim -R'
-alias vimtab='vim -p'
-alias viewtab='vim -Rp'
+if [[ -x /usr/bin/vim ]]; then
+    alias vi='vim -p'
+    alias vim='vim -p'
+    alias view='vim -R'
+    alias vimtab='vim -p'
+    alias viewtab='vim -Rp'
+    alias vivimrc='vim ~/.vimrc'
+fi
 
-# Pacman
-#alias supacins='sudo pacman -S'
-#alias supacrem='sudo pacman -R'
-#alias supacfullrem='sudo pacman -Rc'
-#alias supacupd='sudo pacman -Syu'
-#alias supacclean='sudo paccache -r'
-#alias pacsearch='pacman -Ss '
-#alias pacinfo='pacman -Si'
-#alias makesrcinfo='makepkg --printsrcinfo'
+# pacman
+#if [[-x /usr/bin/pacman ]]; then
+    #alias supacins='sudo pacman -S'
+    #alias supacrem='sudo pacman -R'
+    #alias supacfullrem='sudo pacman -Rc'
+    #alias supacupd='sudo pacman -Syu'
+    #alias supacclean='sudo paccache -r'
+    #alias pacsearch='pacman -Ss '
+    #alias pacinfo='pacman -Si'
+    #alias makesrcinfo='makepkg --printsrcinfo'
+    
+    # pacaur
+    #if [[-x /usr/bin/pacaur ]]; then
+	#alias supacins='pacaur -S'
+	#alias supacrem='pacaur -R'
+	#alias supacfullrem='pacaur -Rc'
+	#alias supacupd='pacaur -Syu'
+	#alias pacsearch='pacaur -Ss'
+	#alias pacinfo='pacaur -Si'
+	#alias getpkgbuild='pacaur -d'
+	#alias getpkgmakepkg='pacaur -m'
+    #fi
+#fi
 
-# Pacaur
-#alias supacins='pacaur -S'
-#alias supacrem='pacaur -R'
-#alias supacfullrem='pacaur -Rc'
-#alias supacupd='pacaur -Syu'
-#alias pacsearch='pacaur -Ss'
-#alias pacinfo='pacaur -Si'
-#alias getpkgbuild='pacaur -d'
-#alias getpkgmakepkg='pacaur -m'
-
-# Git
+# git
 #alias gstat='git status '
 #alias gadd='git add '
 #alias gcommit='git commit '
@@ -74,9 +98,5 @@ alias fetch='neofetch --crop_mode fit'
 alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
 alias feh='feh --geometry 900x600'
 alias ncmpcpp='ncmpcpp; clear'
-
-# zsh
-alias vizrc='vim ~/.zshrc'
-alias loadzrc='source ~/.zshrc'
 
 # vim: sw=4
