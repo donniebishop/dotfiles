@@ -1,0 +1,6 @@
+# Config needs to be symlinked to ~/.stalonetrayrc
+background "#101010"
+icon_size 24
+slot_size 28
+geometry 2x1+30-60
+sticky true
