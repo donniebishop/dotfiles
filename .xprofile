@@ -1,4 +1,20 @@
+# Moon Runes
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
-/usr/bin/fcitx
+/usr/bin/fcitx &
+
+# Network Manager
+/usr/bin/nm-applet &
+
+# Pulse
+/usr/bin/pulseaudio --start
+
+# For the Eyes
+/usr/bin/redshift &
+
+# Compositor
+/usr/bin/compton -bC --config /home/donnie/.config/compton.conf &
+
+# Thunar
+/usr/bin/thunar --daemon &

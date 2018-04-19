@@ -19,22 +19,9 @@ set_from_resource $termfg color15 #ffffff
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# eyesaver
-# this needs to be done once on startup otherwise the pkill fails and
-# the and clause fails
-exec --no-startup-id redshift
-exec_always --no-startup-id pkill redshift && redshift
-
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
 #exec_always --no-startup-id feh --bg-tile ~/Pictures/wallpaper.jpg
-
-# compositor
-exec --no-startup-id /usr/bin/compton -bC --config /home/dbishop/.config/compton.conf
-
-# Some nice stuff
-exec --no-startup-id /usr/bin/thunar --daemon
-exec --no-startup-id /usr/bin/numlockx &
 
 # load up default terminal config for ws1, and then fire off some default progs
 exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/dbishop/.config/i3/ws1.json'"
