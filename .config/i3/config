@@ -21,6 +21,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Use feh to set background to ~/Pictures/wallpaper.jpg, which can be symlinked
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
+# for tiling wallpapers
 #exec_always --no-startup-id feh --bg-tile ~/Pictures/wallpaper.jpg
 
 # load up default terminal config for ws1, and then fire off some default progs
@@ -58,6 +59,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 
 # lock
 bindsym $wmod+l exec --no-startup-id /usr/local/bin/lock.sh
+
+# power menu
+bindsym $mod+Escape exec --no-startup-id /usr/local/bin/power_menu.sh
 
 # tab through workspaces
 bindsym $mod+Tab workspace next
@@ -133,7 +137,6 @@ set $ws0 10
 assign [class="Firefox"] $ws2
 assign [class="Atom"] $ws3
 assign [class="^Inkscape$"] $ws7
-assign [class="Gimp"] $ws7
 assign [class="libreoffice"] $ws8
 assign [class="Spotify"] $ws9
 
@@ -181,30 +184,6 @@ client.focused              $termfg  $termfg  $white  $termfg
 client.unfocused            $termbg  $termbg  $alive  $termbg
 client.focused_inactive     $termbg  $termbg  $alive  $termbg
 client.urgent               $termfg  $termfg  $white  $termfg
-
-
-###########
-#  i3bar  #
-###########
-
-#bar {
-        #status_command i3blocks
-        #tray_output none
-        #position top
-        #font pango:Tewi, Awesome 8
-        #colors {
-                #background  $termbg
-                #statusline  $termfg
-
-                ##selection          #border #fill    #text
-                #focused_workspace   $termfg $termfg  $termbg
-                #active_workspace    $termbg $termbg  $termfg
-                #inactive_workspace  $termbg $termbg  $termfg
-                #urgent_workspace    $termfg $termfg  $termbg
-                #binding_mode        $termfg $termbg  $termfg
-        #}
-#}
-
 
 ####################
 #  i3-gaps config  #
@@ -276,32 +255,6 @@ mode "$mode_gaps_outer" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
-
-###################
-#  power options  #
-###################
-
-#set $Locker /usr/local/bin/py3lock.py && sleep 1
-#
-#set $mode_system System: (L) Logout, (R) Reboot, (S) Shutdown
-#mode "$mode_system" {
-#    #bindsym l exec --no-startup-id $Locker, mode "default"
-#    #bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-#    #bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-#    bindsym Shift+l exec --no-startup-id i3-msg exit, mode "default"
-#    bindsym Shift+r exec --no-startup-id systemctl reboot, mode "default"
-#    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-#
-#    # back to normal: Enter or Escape
-#    bindsym Return mode "default"
-#    bindsym Escape mode "default"
-#}
-#
-#bindsym $mod+Escape mode "$mode_system"
-
-## Above power menu config commented and deprecated for this awesomeness
-bindsym $mod+Escape exec --no-startup-id /usr/local/bin/power_menu.sh
 
 
 #################
