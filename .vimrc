@@ -128,6 +128,8 @@ runtime! archlinux.vim
 
 set number 	    " Enable numbered lines
 set mouse=a         " Enable the use of the mouse.
+set sw=4            " Shift-width 4
+set ts=4            " Tab width 4
 
 set laststatus=2    " Always display powerline in all windows
 set noshowmode      " Hide the default mode text
