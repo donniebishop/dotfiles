@@ -130,7 +130,7 @@ lyrics-autosave = no
 #second-column = no
 
 # Format for playlist columns
-song_columns_list_format = (25)[]{A} (45)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
+song_columns_list_format = (25)[]{A|f:Artist} (45)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 
 ## Custom progress bar. Must be 2 or 3 chars long exactly
 #progressbar_look = =>- 
