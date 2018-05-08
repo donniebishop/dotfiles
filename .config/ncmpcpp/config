@@ -59,7 +59,7 @@ follow_now_playing_lyrics = yes
 
 ############## Display ######################
 ## User interface at startup (classic/alternative)
-user_interface = alternative
+user_interface = classic
 
 ## Show a list of the screens in the top line on startup.
 #welcome-screen-list = yes
@@ -74,7 +74,10 @@ user_interface = alternative
 #hide-cursor = 5
 
 ## Scroll the title if it is too long for the screen.
-#scroll = yes
+header_text_scrolling = no
+
+## Hide header on classic
+header_visibility = no
 
 ## The separator to show at the end of the scrolling title.
 #scroll-sep = " *** "
@@ -87,7 +90,7 @@ user_interface = alternative
 #search-format = "%name%|[%artist% - ]%title%|%file%"
 
 ## The format used to display songs on the status line.
-#status-format = "[%artist% - ]%title%|%shortfile%"
+song_status_format = {{%a - }{%t}}|{%f}
 
 ## The time, in seconds, for which status messages will be displayed.
 #status-message-time = 3
