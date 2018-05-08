@@ -79,6 +79,9 @@ header_text_scrolling = no
 ## Hide header on classic
 header_visibility = no
 
+## Hide status bar
+statusbar_visibility = no
+
 ## The separator to show at the end of the scrolling title.
 #scroll-sep = " *** "
 
@@ -90,7 +93,7 @@ header_visibility = no
 #search-format = "%name%|[%artist% - ]%title%|%file%"
 
 ## The format used to display songs on the status line.
-song_status_format = {{%a - }{%t}}|{%f}
+song_status_format = {{%A - }{%t}}|{%f}
 
 ## The time, in seconds, for which status messages will be displayed.
 #status-message-time = 3
@@ -124,11 +127,14 @@ lyrics-autosave = no
 #chat-prefix = "<user> "
 
 ## Display song length in second column
-#second-column = yes
+#second-column = no
+
+# Format for playlist columns
+song_columns_list_format = (25)[]{A} (45)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{l}
 
 ## Custom progress bar. Must be 2 or 3 chars long exactly
 #progressbar_look = =>- 
-progressbar_look = ─┤─
+progressbar_look = ──
 
 ## Cyclic scrolling
 cyclic_scrolling = yes
