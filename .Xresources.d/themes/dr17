@@ -1,0 +1,31 @@
+! DR17
+!--------------
+*.color0:       #1a0300
+*.color8:       #1a0300
+
+*.color1:       #6e6588
+*.color9:       #6e6588
+
+*.color2:       #a2674b
+*.color10:      #a2674b
+
+*.color3:       #c5785f
+*.color11:      #c5785f
+
+*.color4:       #feb778
+*.color12:      #feb778
+
+*.color5:       #9a8788
+*.color13:      #9a8788
+
+*.color6:       #c2b6ae
+*.color14:      #c2b6ae
+
+*.color7:       #f7ece8
+*.color15:      #f7ece8
+
+#define termbg #101010
+#define termfg #f7ece8
+
+! import rofi
+#include "../rofi/dr17.rofi"

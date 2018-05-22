@@ -1,0 +1,27 @@
+!-------------------------------------------------------------------------------
+! ROFI Color theme - DR17
+!-------------------------------------------------------------------------------
+
+rofi.font: Tewi 9
+rofi.color-enabled: true
+rofi.fullscreen: true
+
+! -color-window background, border color, separator color
+!
+rofi.color-window: #6e6588, #6e6588, #6e6588
+
+
+! -color-normal background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-normal: #6e6588, #f7ece8, #6e6588, #c2b6ae, #1a0300
+
+
+! -color-active background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-active: #6e6588, #f7ece8, #6e6588, #87907e, #1a0300
+
+
+! -color-urgent background, foreground, background alt, highlight background, highlight foreground
+!
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+

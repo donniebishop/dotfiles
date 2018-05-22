@@ -51,7 +51,6 @@
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
     
-    
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
     # The geometry of the message window.
@@ -64,7 +63,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "350x5-15+35"
+    geometry = "350x5-15+15"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -149,7 +148,7 @@
 
 [frame]
     width = 4
-    color = "#e0dbcf"
+    color = "#f7ece8"
 
 [shortcuts]
 
@@ -175,18 +174,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#151615"
-    foreground = "#e0dbcf"
+    background = "1a0300"
+    foreground = "#f7ece8"
     timeout = 15
 
 [urgency_normal]
-    background = "#151615"
-    foreground = "#e0dbcf"
+    background = "1a0300"
+    foreground = "#f7ece8"
     timeout = 15
 
 [urgency_critical]
-    background = "#151615"
-    foreground = "#e0dbcf"
+    background = "1a0300"
+    foreground = "#f7ece8"
     timeout = 0
 
 

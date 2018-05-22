@@ -25,6 +25,7 @@ height = 26
 offset-y = 1%
 radius = 0.0
 fixed-center = true
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -54,7 +55,7 @@ font-5 = "Kochi Gothic:style=Regular:pixelsize=9;1"
 
 modules-left = i3
 modules-center = current-song
-modules-right = vpn pac-updates japinput volume filesystem battery wlan weather date power-menu
+modules-right = vpn pac-updates japinput volume battery weather wlan date power-menu
 
 tray-position = right
 tray-padding = 2
@@ -219,7 +220,8 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal>
+;format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #9f78e1
 label-connected = %essid%
 
