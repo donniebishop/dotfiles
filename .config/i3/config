@@ -63,6 +63,9 @@ bindsym $wmod+l exec --no-startup-id /usr/local/bin/lock.sh
 # power menu
 bindsym $mod+Escape exec --no-startup-id /usr/local/bin/power_menu.sh
 
+# screenshot
+bindsym Print --release exec --no-startup-id /usr/bin/import ~/pics/screenshots/$(date +%m-%d_%H:%M:%S).png
+
 # tab through workspaces
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
