@@ -11,7 +11,7 @@ except:
     exit(0)
 
 t = w.get_temperature('fahrenheit')
-temperature = "{}°F".format(int(t['temp']))
+temperature = "{}°".format(int(t['temp']))
 #status = w.get_status()
 
 # Print status and temp
