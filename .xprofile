@@ -14,7 +14,10 @@ export XMODIFIERS=@im=fcitx
 /usr/bin/redshift &
 
 # Compositor
-/usr/bin/compton -bC --config /home/donnie/.config/compton.conf &
+/usr/bin/compton -bC --config /home/dbishop/.config/compton.conf &
 
 # Thunar
 /usr/bin/thunar --daemon &
+
+# Numlock
+/usr/bin/numlockx on &
