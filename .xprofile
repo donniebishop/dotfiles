@@ -21,3 +21,6 @@ export XMODIFIERS=@im=fcitx
 
 # Numlock
 /usr/bin/numlockx on &
+
+# Xbindkeys
+/usr/bin/xbindkeys -f /home/dbishop/.config/xbindkeysrc
