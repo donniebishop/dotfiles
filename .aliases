@@ -39,6 +39,7 @@ if [[ -x /usr/bin/exa ]]; then
     alias lstree='exa -T'
     alias lsonly='exa -a | grep'
     alias lslonly='exa -la | grep'
+    alias ls1='exa -1'
 fi
 
 # vim
@@ -98,5 +99,9 @@ alias fetch='neofetch --crop_mode fit'
 alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
 alias feh='feh --geometry 900x600'
 alias ncmpcpp='ncmpcpp; clear'
+
+# misc
+alias wtfis='whatis'
+alias whatwifi='iwgetid -r'
 
 # vim: sw=4
