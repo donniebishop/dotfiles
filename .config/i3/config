@@ -64,7 +64,7 @@ bindsym $wmod+l exec --no-startup-id /usr/local/bin/lock.sh
 bindsym $mod+Escape exec --no-startup-id /usr/local/bin/power_menu.sh
 
 # screenshot
-bindsym Print --release exec --no-startup-id /usr/bin/import ~/pics/screenshots/$(date +%m-%d_%H:%M:%S).png
+bindsym Print --release exec --no-startup-id /usr/bin/import ~/screenshots/$(date +%m-%d_%H:%M:%S).png
 
 # tab through workspaces
 bindsym $mod+Tab workspace next
@@ -140,8 +140,7 @@ set $ws0 10
 assign [class="Firefox"] $ws2
 assign [class="Atom"] $ws3
 assign [class="^Inkscape$"] $ws7
-assign [class="libreoffice"] $ws8
-assign [class="Spotify"] $ws9
+assign [class="Spotify"] $ws0
 
 # floating windows
 for_window [class="Bitwig Studio"] floating enable
