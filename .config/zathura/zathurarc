@@ -4,8 +4,8 @@
 
 # Colors
 #----------
-set defaultbar-bg "#101010"
-set defaultbar-bg "#f7f7f7"
+set default-bg "#101010"
+#set default-fg "#f7f7f7"
 set statusbar-bg "#101010"
 set statusbar-fg "#f7f7f7"
 set inputbar-bg "#101010"
