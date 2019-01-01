@@ -90,6 +90,16 @@ fi
 #alias gresetchanges='git checkout --'
 #alias gswitch='git checkout'
 
+if [[ -x /usr/bin/trash-put ]]
+then
+    alias rm='trash-put'
+    alias lstrash='trash-list'
+    alias emptrash='trash-empty'
+    alias trashres='trash-restore'
+    alias trashrm='trash-rm'
+    alias reallyrm='/usr/bin/rm'
+fi
+
 # unixporn
 alias i3config='vim ~/.config/i3/config'
 alias viblocks='vim ~/.i3blocks.conf'
