@@ -15,21 +15,16 @@ if [[ $SHELL = /bin/bash ]]; then
 fi
 
 # ls
-alias ls='ls --color=auto'
-alias lsa='ls -A --color=auto'
-alias lsl='ls -oh --color=auto'
-alias lsla='ls -Aoh --color=auto'
-alias lso='ls -A | grep --color=auto'
+alias lsa='ls -A'
+alias lsl='ls -oh'
+alias lsla='ls -Aoh'
 alias lsr='ls -R'
 alias lslr='ls -oR'
 alias lsd='ls -d */'
 alias lsld='ls -do */'
-alias lslo='ls -Aoh | grep --color=auto'
-alias lsonly='ls -A | grep --color=auto'
-alias lslonly='ls -Aoh | grep --color=auto'
 
 # exa
-if [[ -x /usr/bin/exa ]]; then
+if [[ -x /usr/local/bin/exa ]]; then
     alias ls='exa'
     alias lsa='exa -a'
     alias lso='exa -a | grep'
@@ -90,28 +85,29 @@ fi
 #alias gresetchanges='git checkout --'
 #alias gswitch='git checkout'
 
-if [[ -x /usr/bin/trash-put ]]
-then
-    alias rm='trash-put'
-    alias lstrash='trash-list'
-    alias emptrash='trash-empty'
-    alias trashres='trash-restore'
-    alias trashrm='trash-rm'
-    alias reallyrm='/usr/bin/rm'
-fi
+#if [[ -x /usr/bin/trash-put ]]
+#then
+#    alias rm='trash-put'
+#    alias lstrash='trash-list'
+#    alias emptrash='trash-empty'
+#    alias trashres='trash-restore'
+#    alias trashrm='trash-rm'
+#    alias reallyrm='/usr/bin/rm'
+#fi
 
 # unixporn
-alias i3config='vim ~/.config/i3/config'
-alias viblocks='vim ~/.i3blocks.conf'
-alias vixres='vim ~/.Xresources'
-alias xrdbreload='xrdb ~/.Xresources'
-alias fetch='neofetch --crop_mode fit'
-alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
-alias feh='feh --geometry 900x600'
-alias ncmpcpp='ncmpcpp; clear'
+#alias i3config='vim ~/.config/i3/config'
+#alias viblocks='vim ~/.i3blocks.conf'
+#alias vixres='vim ~/.Xresources'
+#alias xrdbreload='xrdb ~/.Xresources'
+#alias fetch='neofetch --crop_mode fit'
+#alias smugfetch='neofetch --image ~/Pictures/smugfaces/ --crop_mode fit'
+#alias feh='feh --geometry 900x600'
+#alias ncmpcpp='ncmpcpp; clear'
 
 # misc
 alias wtfis='whatis'
-alias whatwifi='iwgetid -r'
+#alias whatwifi='iwgetid -r'
+alias cls='clear'
 
 # vim: sw=4
