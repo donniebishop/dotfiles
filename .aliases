@@ -23,18 +23,18 @@ alias lslr='ls -oR'
 alias lsd='ls -d */'
 alias lsld='ls -do */'
 
-# exa
-if [[ -x /usr/local/bin/exa ]]; then
-    alias ls='exa'
-    alias lsa='exa -a'
-    alias lso='exa -a | grep'
-    alias lslo='exa -la | grep'
-    alias lsl='exa -l'
-    alias lsla='exa -la'
-    alias lstree='exa -T'
-    alias lsonly='exa -a | grep'
-    alias lslonly='exa -la | grep'
-    alias ls1='exa -1'
+# eza
+if [[ -x /usr/local/bin/eza ]]; then
+    alias ls='eza'
+    alias lsa='eza -a'
+    alias lso='eza -a | grep'
+    alias lslo='eza -la | grep'
+    alias lsl='eza -l'
+    alias lsla='eza -la'
+    alias lstree='eza -T'
+    alias lsonly='eza -a | grep'
+    alias lslonly='eza -la | grep'
+    alias ls1='eza -1'
 fi
 
 # vim
