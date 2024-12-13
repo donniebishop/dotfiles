@@ -1,0 +1,34 @@
+{
+  "filterLinkHints": true,
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "f",
+      "pattern": "https?://www.3daimtrainer.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://monkeytype.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://www.sejda.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://na2.docusign.net/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://game.loverwatch.gg/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https?://us-east-2.turbotaxonline.intuit.com/*"
+    }
+  ]
+}
