@@ -1,0 +1,6 @@
+# Show line numbers & line between multiple files
+--style="numbers,rule"
+
+# Use italic text
+--italic-text=always
+

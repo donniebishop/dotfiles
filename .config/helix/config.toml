@@ -1,0 +1,37 @@
+# Themes
+#theme = "rose_pine"
+theme = "monokai_soda"
+
+[editor]
+# Show currently open buffers, only when more than one exists.
+bufferline = "multiple"
+# Highlight all lines with a cursor
+cursorline = true
+# Use relative line numbers
+line-number = "relative"
+# Show a ruler at column 120
+#rulers = [120]
+# Force the theme to show colors
+true-color = true
+# Minimum severity to show a diagnostic after the end of a line
+end-of-line-diagnostics = "hint"
+
+#[editor.cursor-shape]
+#insert = "bar"
+#normal = "block"
+#select = "underline"
+
+[editor.lsp]
+# Disable automatically popups of signature parameter help
+auto-signature-help = false
+# Show LSP messages in the status line
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[editor.inline-diagnostics]
+# Show inline diagnostics when the cursor is on the line
+cursor-line = "error"
+# Don't expand diagnostics unless the cursor is on the line
+other-lines = "disable"
