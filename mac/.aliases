@@ -1,0 +1,73 @@
+#
+# Aliases file for portable sourcing
+#
+
+# zsh
+if [[ $SHELL = /bin/zsh ]]; then
+    alias vizrc='vim ~/.zshrc'
+    alias loadzrc='source ~/.zshrc'
+fi
+
+# bash
+if [[ $SHELL = /bin/bash ]]; then
+    alias vibashrc='vim ~/.bashrc'
+    alias loadzrc='source ~/.bashrc'
+fi
+
+# ls
+alias lsa='ls -A'
+alias lsl='ls -oh'
+alias lsla='ls -Aoh'
+alias lsr='ls -R'
+alias lslr='ls -oR'
+alias lsd='ls -d */'
+alias lsld='ls -do */'
+
+# eza
+if [[ -x /opt/homebrew/bin/eza ]]; then
+    alias ls='eza'
+    alias lsa='eza -a'
+    alias lso='eza -a | grep'
+    alias lslo='eza -la | grep'
+    alias lsl='eza -l'
+    alias lsla='eza -la'
+    alias lstree='eza -T'
+    alias lsonly='eza -a | grep'
+    alias lslonly='eza -la | grep'
+    alias ls1='eza -1'
+fi
+
+# vim
+if [[ -x /usr/bin/vim ]]; then
+    alias vi='vim -p'
+    alias vim='vim -p'
+    alias view='vim -R'
+    alias vimtab='vim -p'
+    alias viewtab='vim -Rp'
+    alias vivimrc='vim ~/.vimrc'
+fi
+
+# bat
+if [[ -x /opt/homebrew/bin/bat ]]; then
+    alias cat='bat'
+fi
+
+# git
+#alias gstat='git status '
+#alias gadd='git add '
+#alias gcommit='git commit '
+#alias gclone='git clone '
+#alias glog='git log -3'
+#alias gpull='git pull '
+#alias gpush='git push '
+#alias gdiff='git diff'
+#alias gamend='git commit --amend --reuse-message=HEAD'
+#alias gunstage='git reset HEAD '
+#alias gresetchanges='git checkout --'
+#alias gswitch='git checkout'
+
+# misc
+alias wtfis='whatis'
+#alias whatwifi='iwgetid -r'
+
+# vim: sw=4
