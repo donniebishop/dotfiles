@@ -6,14 +6,15 @@
 
 ps -ef | grep -q -e "mediaanalysisd$"
 MAD_RUNNING=$?
+DT=$(date)
 
 # look what you made me do 
 if [ "$MAD_RUNNING" -eq 0 ]; then
   MAD_PROC=$(pgrep -f "mediaanalysisd$")
-  #echo "mediaanalysisd running ($MAD_PROC). Killing process..."
+  echo "$DT - mediaanalysisd running ($MAD_PROC). Killing process."
   kill -15 $MAD_PROC
 else
-  #echo "mediaanlysisd not running. Exiting."
+  echo "$DT - mediaanalysisd not running. Exiting."
   exit 0
 fi
 
